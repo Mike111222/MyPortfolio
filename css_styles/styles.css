@@ -1,0 +1,134 @@
+/* for the whole page margin and padding reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* the toolbar styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3e3c3c;
+  align-items: center;
+  padding: 0 2rem;
+  border-bottom: 1px solid red;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 4.7rem;
+}
+
+/* My Logo styles */
+.mylogo {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 1.2rem;
+}
+
+.mylogo:hover {
+  color: #ff6b00;
+  cursor: pointer;
+}
+
+i {
+  cursor: pointer;
+}
+
+/* the headline styles */
+
+/* 1-My bio page styles */
+.mybiopage {
+  background-color: #1c1a19;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  padding: 125px 25px;
+  gap: 13px;
+  position: relative;
+}
+
+/* 2-Main heading styles */
+.mybio h1 {
+  color: #ff6b00;
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 400;
+  width: 327px;
+  height: 124px;
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  letter-spacing: 0.37px;
+}
+
+/* 3-sub heading styles */
+.mybio h2 {
+  width: 327px;
+  height: 27px;
+  top: 256px;
+  left: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff5e1;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1.17px;
+  padding: 25px 0;
+}
+
+/* 4-My Bio paragraph styles */
+.mybio p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #fffff9;
+  font-size: 16px;
+  line-height: 24px;
+  width: 327px;
+  height: 123px;
+}
+
+/* background image styles */
+.bgimage {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+/* list styles */
+div ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ul li a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+div ul li {
+  list-style: none;
+}
+
+/* social buttons container styles */
+.socialbtns {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* social media contacts styles */
+.mysocial {
+  cursor: pointer;
+  z-index: 1;
+}
