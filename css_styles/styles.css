@@ -52,7 +52,7 @@ i {
   height: 100vh;
   padding: 125px 25px;
   gap: 13px;
-  position: absolute;
+  position: relative;
 }
 
 /* 2-Main heading styles */
