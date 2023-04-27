@@ -143,6 +143,7 @@ div ul li {
   gap: 12px;
   align-content: center;
 }
+
 #work-headline {
   font-family: "Crete Round", serif;
   font-weight: 400;
@@ -153,11 +154,13 @@ div ul li {
   width: 327px;
   height: 83px;
 }
+
 #work-image {
   margin-top: 60px;
   width: 327px;
   height: 237px;
 }
+
 .work-subheading {
   font-family: "Crete Round", serif;
   font-weight: 400;
@@ -167,6 +170,7 @@ div ul li {
   width: 327px;
   height: 36px;
 }
+
 .work-specs {
   width: 327px;
   height: 147px;
@@ -181,6 +185,7 @@ div ul li {
   display: flex;
   justify-content: flex-start;
 }
+
 .flex-items {
   color: #091e42;
   font-family: "Inter", sans-serif;
@@ -201,9 +206,11 @@ div ul li {
 .item2 {
   width: auto;
 }
+
 .item3 {
   width: auto;
 }
+
 .item4 {
   width: auto;
 }
@@ -222,6 +229,7 @@ div ul li {
   color: white;
   border: none;
 }
+
 .work-btn:hover {
   cursor: pointer;
 }
@@ -243,12 +251,14 @@ div ul li {
   height: 225px;
   width: 327px;
 }
+
 .projecttitle {
-  color:#fff;
+  color: #fff;
   width: 295px;
   height: auto;
   margin-top: 10px;
 }
+
 .projectdetails {
   width: 295px;
   height: auto;
@@ -261,27 +271,31 @@ div ul li {
   color: #fff;
   background: rgba(255, 255, 255, 0.24);
 }
+
 .projectitem2 {
   border: 1px solid #8993a4;
   color: #fff;
   background: rgba(255, 255, 255, 0.24);
 }
+
 .projectitem3 {
   border: 1px solid #8993a4;
   color: #fff;
   background: rgba(255, 255, 255, 0.24);
 }
+
 .projbtn {
   width: 327px;
   z-index: 1;
   position: absolute;
   bottom: 0;
 }
+
 #myworks-btn {
   width: 8rem;
 }
+
 #proj1 {
- 
   height: 386px;
   position: relative;
   display: grid;
@@ -305,7 +319,6 @@ div ul li {
   gap: 12px;
   align-content: center;
 }
-
 
 /* project 2nd page section styles */
 .projsecondpage {
@@ -396,6 +409,7 @@ div ul li {
   background-repeat: no-repeat;
   background-position: right 0 bottom 0;
 }
+
 #for-me {
   color: #ff6b00;
   font-size: 72px;
@@ -407,6 +421,7 @@ div ul li {
   font-style: normal;
   letter-spacing: 0.37px;
 }
+
 #about-me p {
   color: #f4f5f7;
   font-size: 16px;
@@ -417,10 +432,12 @@ div ul li {
   font-family: "Inter", sans-serif;
   font-style: normal;
 }
+
 .resume-btn {
   width: 161px;
   height: 48px;
 }
+
 #aboutme-img {
   position: absolute;
   right: 0;
@@ -435,6 +452,7 @@ div ul li {
   justify-content: center;
   align-items: flex-start;
 }
+
 .rectangle {
   position: absolute;
   width: 18px;
@@ -443,10 +461,12 @@ div ul li {
   transform: rotate(-45deg);
   left: 80px;
 }
+
 .square {
   transform: none;
   left: 60px;
 }
+
 .circle {
   transform: none;
   border: 1px solid #ff6b00;
@@ -465,6 +485,7 @@ div ul li {
   padding: 120px 24px;
   align-items: center;
 }
+
 .lang-headings {
   display: inline;
   color: white;
@@ -478,6 +499,7 @@ div ul li {
   letter-spacing: 0.37px;
   text-align: center;
 }
+
 .my-listitems {
   list-style: none;
   text-align: center;
@@ -488,6 +510,7 @@ div ul li {
   color: white;
   height: 50px;
 }
+
 .style-listitems {
   margin: 20px 0;
 }
@@ -501,6 +524,7 @@ div ul li {
   align-content: center;
   padding: 120px 24px;
 }
+
 .lets-intouch {
   color: #172b4d;
   text-align: center;
@@ -512,6 +536,7 @@ div ul li {
   font-weight: 700;
   margin-bottom: 30px;
 }
+
 .input {
   margin-top: 25px;
   padding: 12px;
@@ -519,6 +544,7 @@ div ul li {
   border: none;
   font-family: "Inter", sans-serif;
 }
+
 .myborder {
   border-bottom: 1px solid #dbd8d7;
 }
@@ -530,26 +556,29 @@ div ul li {
   align-items: center;
   justify-content: center;
 }
+
 #gettouch-btn {
   margin-top: 17px;
 }
+
 /* footer styles */
 footer {
   width: 327px;
   height: 70px;
 }
+
 .for-footercenter {
   justify-content: center;
   align-items: center;
   width: 100vw;
 }
+
 .social1 {
   cursor: pointer;
   z-index: 1;
   padding: 10px;
 }
+
 .footerbtns {
   margin-top: 20px;
 }
-
-
