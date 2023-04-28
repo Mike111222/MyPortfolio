@@ -187,7 +187,7 @@ div ul li {
 }
 
 .flex-items {
-  color: #091e42;
+  color: #fff;
   font-family: "Inter", sans-serif;
   font-size: 15px;
   line-height: 20px;
@@ -196,6 +196,10 @@ div ul li {
   height: auto;
   align-items: center;
   margin-right: 12px;
+}
+
+.work-items {
+  color: #091e42;
 }
 
 /* items styles */
@@ -232,6 +236,14 @@ div ul li {
 
 .work-btn:hover {
   cursor: pointer;
+  background-color: #fff5e1;
+  color: #ff6b00;
+}
+
+.work-btn:active {
+  cursor: pointer;
+  background-color: #ff6b00;
+  color: #fff5e1;
 }
 
 /* projects styles */
@@ -246,7 +258,7 @@ div ul li {
 }
 
 /* project 1 styles */
-.multi-story {
+.multi-storybg {
   margin-top: 4rem;
   height: 225px;
   width: 327px;
@@ -289,6 +301,7 @@ div ul li {
   z-index: 1;
   position: absolute;
   bottom: 0;
+  right: 0;
 }
 
 #myworks-btn {
@@ -298,8 +311,9 @@ div ul li {
 #proj1 {
   height: 386px;
   position: relative;
-  display: grid;
-  padding: 120px 24px;
+  display: flex;
+  flex-direction: column;
+  padding: 63px 24px;
   gap: 12px;
   align-content: center;
   width: 327px;
@@ -314,19 +328,9 @@ div ul li {
   position: relative;
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.5) 61.94%), url(/images/Img\ Placeholder-2.png);
   background-size: cover;
-  display: grid;
-  padding: 120px 24px;
-  gap: 12px;
-  align-content: center;
-}
-
-/* project 2nd page section styles */
-.projsecondpage {
-  display: grid;
-  width: 100vw;
-  height: auto;
-  background-color: #e5e5e5;
-  padding: 10px 24px;
+  display: flex;
+  flex-direction: column;
+  padding: 63px 24px;
   gap: 12px;
   align-content: center;
 }
@@ -338,8 +342,9 @@ div ul li {
   position: relative;
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.5) 61.94%), url(/images/Img\ Placeholder-2.png);
   background-size: cover;
-  display: grid;
-  padding: 120px 24px;
+  display: flex;
+  flex-direction: column;
+  padding: 63px 24px;
   gap: 12px;
   align-content: center;
 }
@@ -351,19 +356,9 @@ div ul li {
   position: relative;
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.5) 61.94%), url(/images/Img\ Placeholder-2.png);
   background-size: cover;
-  display: grid;
-  padding: 120px 24px;
-  gap: 12px;
-  align-content: center;
-}
-
-/* projects 3rd page section styles */
-.projthirdpage {
-  display: grid;
-  width: 100vw;
-  height: auto;
-  background-color: #e5e5e5;
-  padding: 10px 24px;
+  display: flex;
+  flex-direction: column;
+  padding: 63px 24px;
   gap: 12px;
   align-content: center;
 }
@@ -375,8 +370,9 @@ div ul li {
   position: relative;
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.5) 61.94%), url(/images/Img\ Placeholder-2.png);
   background-size: cover;
-  display: grid;
-  padding: 120px 24px;
+  display: flex;
+  flex-direction: column;
+  padding: 63px 24px;
   gap: 12px;
   align-content: center;
 }
@@ -388,8 +384,9 @@ div ul li {
   position: relative;
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.5) 61.94%), url(/images/Img\ Placeholder-2.png);
   background-size: cover;
-  display: grid;
-  padding: 120px 24px;
+  display: flex;
+  flex-direction: column;
+  padding: 63px 24px;
   gap: 12px;
   align-content: center;
 }
@@ -580,5 +577,5 @@ footer {
 }
 
 .footerbtns {
-  margin-top: 20px;
+  display: flex;
 }
