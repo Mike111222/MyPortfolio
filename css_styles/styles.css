@@ -542,7 +542,7 @@ div ul li {
   font-family: "Inter", sans-serif;
 }
 
-form {
+#myform {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
