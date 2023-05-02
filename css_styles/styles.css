@@ -542,6 +542,13 @@ div ul li {
   font-family: "Inter", sans-serif;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: "Inter", sans-serif;
+}
+
 .myborder {
   border-bottom: 1px solid #dbd8d7;
 }
