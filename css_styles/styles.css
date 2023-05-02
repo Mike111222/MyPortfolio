@@ -547,6 +547,7 @@ div ul li {
   flex-direction: column;
   flex-wrap: wrap;
   font-family: "Inter", sans-serif;
+  margin: 0;
 }
 
 .myborder {
