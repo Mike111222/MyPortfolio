@@ -4,9 +4,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-@media screen and (min-width: 375px) {
-
  
 /* the toolbar styles */
 header {
@@ -56,6 +53,11 @@ i {
   padding: 125px 25px;
   gap: 13px;
   position: relative;
+  background-image: url(/images/Illustration.png);
+  background-repeat: no-repeat;
+  background-position: absolute;
+  background-position-x: right;
+  background-position-y: bottom;
 }
 
 /* 2-Main heading styles */
@@ -102,12 +104,12 @@ i {
 }
 
 /* background image styles */
-.bgimage {
+/* .bgimage {
   position: absolute;
   right: 0;
   bottom: 0;
   z-index: 0;
-}
+} */
 
 /* list styles */
 div ul {
@@ -124,6 +126,13 @@ div ul li {
   list-style: none;
 }
 
+.mymenu {
+  display: block;
+}
+
+.nav-list {
+  display: none;
+}
 /* social buttons container styles */
 .socialbtns {
   display: flex;
@@ -583,4 +592,111 @@ footer {
   display: flex;
 }
 
+/* Desktop version */
+
+@media screen and (min-width: 768px) {
+.mymenu {
+  visibility: hidden;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 206px;
+  margin-top: 26px;
+}
+
+.nav-list li {
+  list-style :none;
+  padding-right: 32px;
+}
+
+.nav-list li a {
+  color: #fff;
+}
+.nav-list li a:hover {
+  color: #fffdfdd3;
+}
+
+.mylogo {
+  margin-left: 154px;
+}
+
+.mybiopage {
+  display: flex;
+  flex-direction:row-reverse ;
+  justify-content: start;
+  height: 870px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-image: url(/images/Group-desktop.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  /* background-position-x: ;
+  background-position-y: bottom; */
+}
+/* 
+.bgdesktop {
+  position: absolute;
+  width: 1003.13px;
+  height: 769.27px;
+  left: 1744.68px;
+  top: -135px;  
+  transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
+} */
+
+.socialbtns-main {
+  height: 100%;
+  justify-items: center;
+  padding-top: 30px;
+}
+.socialbtns-main ul {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+}
+
+.mybio {
+  padding-left: 75px;
+  width: 1440px;
+  left: 0px;
+  top: 0px;
+}
+
+.mybio h1 {
+font-family: 'Crete Round';
+font-style: normal;
+font-weight: 400;
+font-size: 78px;
+line-height: 82px;
+width: 470px;
+height: 160px;
+top: 192px;
+}
+
+.mybio h2 {
+width: 566px;
+height: 24px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 44px;
+display: flex;
+align-items: center;
+
+}
+.mybio p {
+width: 566px;
+height: 123px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+color: #F4F5F7;
+flex: none;
+order: 2;
+flex-grow: 0;
+}
 }
