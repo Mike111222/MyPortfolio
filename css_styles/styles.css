@@ -573,6 +573,15 @@ div ul li {
   display: none;
 }
 
+#myform {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+
+}
+
 .myborder {
   border-bottom: 1px solid #dbd8d7;
 }

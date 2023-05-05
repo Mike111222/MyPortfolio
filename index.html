@@ -204,7 +204,9 @@
                 some of my work and experience! If you like what you see and have a
                 project you need coded, don't hesitate to contact me.
             </p>
-            <button type="button" class="work-btn resume-btn on-desktop">Get My Resume</button>
+<button class="work-btn resume-btn">Get My Resume</button>
+
+            <button class="work-btn resume-btn">Get My Resume</button>
 
         </section>
         <section id="pro-languages">
@@ -254,29 +256,35 @@
             </div>
         </section>
         <section id="for-getintouch" class="myborder">
-            <div class="container-touch">
-                <h2 class="lets-intouch">I'm always interested in hearing about new projects, so if you'd like to chat
-                    please get
-                    in touch</h2>
-            </div>
-            <div class="container-form">
-                <form id="myform" action="https://formspree.io/f/xbjewoor" method="post">
-                    <input name="full-name" class="input myborder on-mobile" type="text" required
-                        placeholder="Full name" maxlength="30">
-                    <div class="firstlast-name"><input name="first-name" class="input form-input myborder on-desktop"
-                            type="text" required placeholder="First name" maxlength="20">
+<div class="container-touch">
+    <h2 class="lets-intouch">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch</h2>
+</div>
+<div class="container-form">
+    <form id="myform" action="https://formspree.io/f/xbjewoor" method="post">
+        <input name="full-name" class="input myborder on-mobile" type="text" required placeholder="Full name" maxlength="30">
+        <div class="firstlast-name">
+            <input name="first-name" class="input form-input myborder on-desktop" type="text" required placeholder="First name" maxlength="20">
+            <input name="last-name" class="input form-input myborder on-desktop" type="text" required placeholder="Last name" maxlength="20">
+        </div>
+        <input name="email" class="input myborder" type="email" required placeholder="Email address">
+        <textarea name="textarea" type="text" class="input" id="textarea" cols="32" rows="6" required placeholder="Hey Mike, I would like to get in touch with you." maxlength="500"></textarea>
+        <div class="centerbtn">
+            <button id="gettouch-btn" name="getintouch-btn" type="submit" class="work-btn">Get in touch</button>
+        </div>
+    </form>
+</div>
 
-                        <input name="last-name" class="input form-input myborder on-desktop" type="text" required
-                            placeholder="last name" maxlength="20">
-                    </div>
-                    <input name="email" class="input myborder" type="email" required placeholder="Email address">
-                    <textarea name="textarea" type="text" class="input" id="textarea" cols="32" rows="6" required
-                        placeholder="Hey Mike, I would like to get in touch with you." maxlength="500"></textarea>
-                    <div class="centerbtn"><button id="gettouch-btn" name="getintouch-btn" type="submit"
-                            class="work-btn">Get in touch</button>
-                    </div>
-                </form>
-            </div>
+            <h2 class="lets-intouch">I'm always interested in hearing about new projects, so if you'd like to chat
+                please get
+                in touch</h2>
+            <form id="myform" action="https://formspree.io/f/xbjewoor" method="post">
+                <input name="full-name" class="input myborder" type="text" required placeholder="Full name"
+                    maxlength="30">
+                <input name="email" class="input myborder" type="email" required placeholder="Email address">
+                <textarea name="textarea" type="text" class="input" id="textarea" cols="32" rows="6" required
+                    placeholder="Enter text here" maxlength="500"></textarea>
+                    <div class="centerbtn"><button id="gettouch-btn" name="getintouch-btn" type="submit" class="work-btn">Get in touch</button></div>
+            </form>
         </section>
     </main>
     <footer class="footerbtns">
