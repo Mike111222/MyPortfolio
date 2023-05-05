@@ -22,7 +22,7 @@
 <body>
     <!-- the toolbar (or header) section -->
     <header id="myheader">
-        <a class="mylogo" href="#home">Mike</a>
+        <a class="mylogo" href="#home">My Logo</a>
         <nav>
             <ul class="nav-list">
                 <li><a href="#myworks">Portfolio</a></li>
@@ -74,26 +74,30 @@
             </div>
 
         </section>
-        <section id="myworks" class="myworks">
-            <h2 id="work-headline">My Recent Works</h2>
-            <div class="multi-storybg">
-                <img src="/images/Multi-Post Stories.png" alt="">
-
-                <h2 class="work-subheading">Multi-Post Stories</h2>
-                <p class="work-specs">A daily selection of privately personalized reads; no accounts or
-                    sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown
-                    printer took a standard dummy text.</p>
+        <section id="myworks">
+            <div class="works-title">
+                <h2 id="work-headline">My Recent Works</h2>
+                <div class="line"></div>
             </div>
-            <div class="for-flex">
-                <ul>
-                    <li class="flex-items work-items item1">CSS</li>
-                    <li class="flex-items work-items item2">HTM</li>
-                    <li class="flex-items work-items item3">BootStrap</li>
-                    <li class="flex-items work-items item3">Ruby</li>
-                </ul>
+            <div class="myworks">
+                <div class="multi-storybg">
+                    <div class="work-image"></div>
+                </div>
+                <div class="div-myworks">
+                    <h2 class="work-subheading">Multi-Post Stories</h2>
+                    <p class="work-specs">A daily selection of privately personalized reads; no accounts or
+                        sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an
+                        unknown
+                        printer took a standard dummy text.</p>
+                    <ul class="for-flex">
+                        <li class="flex-items work-items item1">CSS</li>
+                        <li class="flex-items work-items item2">HTM</li>
+                        <li class="flex-items work-items item3">BootStrap</li>
+                        <li class="flex-items work-items item3">Ruby</li>
+                    </ul>
+                    <div><button id="myworks-btn" class="work-btn">See Project</button></div>
+                </div>
             </div>
-            <button id="myworks-btn" class="work-btn">See Project</button>
-
         </section>
         <section class="projects-section">
             <div id="proj1">
@@ -186,54 +190,72 @@
 
         </section>
         <section id="pro-languages">
-            <div class="my-thumbnail">
-                <div class="rectangle">
+            <div>
+                
+                <div class="my-thumbnail">
+                    <div class="rectangle"></div>
 
+                    <h2 class="lang-headings">Languages</h2>
                 </div>
-                <h2 class="lang-headings">Languages</h2>
+                <ul>
+                    <ul class="style-listitems dt-list">
+                        <li class="my-listitems">JavaScript</li>
+                        <li class="my-listitems">Ruby</li>
+                        <li class="my-listitems">HTML</li>
+                        <li class="my-listitems">CSS</li>
+                    </ul>
             </div>
-            <ul>
-                <ul class="style-listitems">
-                    <li class="my-listitems">JavaScript</li>
-                    <li class="my-listitems">Ruby</li>
-                    <li class="my-listitems">HTML</li>
-                    <li class="my-listitems">CSS</li>
-                </ul>
+            <div>
                 <div class="my-thumbnail">
                     <div class="rectangle square">
                     </div>
                     <h2 class="lang-headings">Frameworks</h2>
                 </div>
-                <ul class="style-listitems">
+                <ul class="style-listitems dt-list">
                     <li class="my-listitems">React.js</li>
                     <li class="my-listitems">Ruby on Rails</li>
                     <li class="my-listitems">RSPec</li>
                     <li class="my-listitems">CapyBara</li>
 
                 </ul>
+            </div>
+            <div>
                 <div class="my-thumbnail">
                     <div class="rectangle circle">
                     </div>
                     <h2 class="lang-headings ">Skills</h2>
                 </div>
-                <ul class="style-listitems">
+                <ul class="style-listitems dt-list">
                     <li class="my-listitems">Database Management</li>
                     <li class="my-listitems">Version Control</li>
                     <li class="my-listitems">CLI</li>
                     <li class="my-listitems">API Design</li>
                     <li class="my-listitems">Web Development</li>
                 </ul>
-            </ul>
+                </ul>
+            </div>
         </section>
         <section id="for-getintouch" class="myborder">
-            <h2 class="lets-intouch">I'm always interested in hearing about new projects, so if you'd like to chat
-                please get
-                in touch</h2>
-            <input class="input myborder" type="text" placeholder="Full name">
-            <input class="input myborder" type="email" placeholder="Email address">
-            <textarea class="input" name="textarea" id="textarea" cols="32" rows="6"
-                placeholder="Enter text here"></textarea>
-            <div class="centerbtn"><button id="gettouch-btn" class="work-btn">Get in touch</button></div>
+            <div>
+                <h2 class="lets-intouch">I'm always interested in hearing about new projects, so if you'd like to chat
+                    please get
+                    in touch</h2>
+            </div>
+            <div>
+                <form id="myform" action="https://formspree.io/f/xbjewoor" method="post">
+                    <input name="full-name" class="input myborder fullname-hide" type="text" required placeholder="Full name"
+                        maxlength="30">
+                        <input name="first-name" class="input myborder name-hide" type="text" required placeholder="First name"
+                        maxlength="30">
+                        <input name="last-name" class="input myborder name-hide" type="text" required placeholder="last name"
+                        maxlength="30">
+                    <input name="email" class="input myborder" type="email" required placeholder="Email address">
+                    <textarea name="textarea" type="text" class="input" id="textarea" cols="32" rows="6" required
+                        placeholder="Enter text here" maxlength="500"></textarea>
+                    <div class="centerbtn"><button id="gettouch-btn" name="getintouch-btn" type="submit"
+                            class="work-btn">Get in touch</button></div>
+                </form>
+            </div>
         </section>
     </main>
     <footer class="footerbtns">
