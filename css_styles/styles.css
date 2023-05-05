@@ -553,10 +553,6 @@ div ul li {
   margin-bottom: 30px;
 }
 
-#myform {
-  display: grid;
-}
-
 .input {
   margin-top: 25px;
   padding: 12px;
@@ -574,12 +570,11 @@ div ul li {
 }
 
 #myform {
-  display: flex;
+  display: grid;
   flex-direction: column;
   flex-wrap: wrap;
   font-family: "Inter", sans-serif;
   margin: 0;
-
 }
 
 .myborder {
