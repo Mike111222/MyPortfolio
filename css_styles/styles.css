@@ -28,6 +28,7 @@ header {
   text-decoration: none;
   color: white;
   padding: 1.2rem;
+  transition: all .3s ease-in-out;
 }
 
 .mylogo:hover {
@@ -66,8 +67,6 @@ i {
   font-family: "Crete Round", serif;
   font-style: normal;
   letter-spacing: 0.37px;
-  animation-name: moved;
-  transition: all 1s;
 }
 
 /* 3-sub heading styles */
@@ -86,18 +85,6 @@ i {
   align-items: center;
   letter-spacing: 1.17px;
   padding: 25px 0;
-  animation-name: moved;
-  transition: all 3s;
-}
-
-@keyframes moved {
-  from {
-    transform: translateY(0%);
-  }
-
-  to {
-    transform: translateY(100%);
-  }
 }
 
 /* 4-My Bio paragraph styles */
@@ -110,18 +97,6 @@ i {
   line-height: 24px;
   width: 327px;
   height: 123px;
-  animation-name: changeSize;
-  transition: all 3s;
-
-}
-
-@keyframes changeSize{
-  50% {
-    font-size: 16px;
-  }
-  100% {
-   font-size: 24px;
-  }
 }
 
 /* background image styles */
