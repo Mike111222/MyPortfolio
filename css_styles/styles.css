@@ -28,7 +28,7 @@ header {
   text-decoration: none;
   color: white;
   padding: 1.2rem;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .mylogo:hover {
@@ -93,7 +93,6 @@ i {
   font-style: normal;
   font-weight: 400;
   color: #fffff9;
-  font-size: changeSize;
   line-height: 24px;
   width: 327px;
   height: 123px;
