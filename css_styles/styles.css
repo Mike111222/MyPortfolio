@@ -146,15 +146,26 @@ div ul li {
 }
 
 /* works section styles */
-.myworks {
+#myworks {
   display: grid;
-  width: 100vw;
+  width: 100%;
   height: auto;
   background-color: #e5e5e5;
   padding: 120px 24px;
   gap: 12px;
   align-content: center;
 }
+
+.myworks {
+  display: grid;
+  width: 100%;
+  height: auto;
+  background-color: #e5e5e5;
+  padding: 120px 24px;
+  gap: 12px;
+  align-content: center;
+}
+
 
 #work-headline {
   font-family: "Crete Round", serif;
@@ -167,7 +178,9 @@ div ul li {
   height: 83px;
 }
 
-#work-image {
+.work-image {
+  background-image: url(/images/Multi-Post\ Stories.png);
+  background-repeat: no-repeat;
   margin-top: 60px;
   width: 327px;
   height: 237px;
@@ -270,9 +283,10 @@ div ul li {
 }
 
 /* project 1 styles */
+
 .multi-storybg {
   margin-top: 4rem;
-  height: 225px;
+  height: auto;
   width: 327px;
 }
 
@@ -522,6 +536,7 @@ div ul li {
 
 .style-listitems {
   margin: 20px 0;
+  flex-direction: column;
 }
 
 /* get in touch styles */
@@ -552,6 +567,9 @@ div ul li {
   background-color: #fcfbfb;
   border: none;
   font-family: "Inter", sans-serif;
+}
+.fullname-hide {
+  visibility: visible;
 }
 
 .myborder {
@@ -614,7 +632,8 @@ footer {
   color: #fff;
 }
 .nav-list li a:hover {
-  color: #fffdfdd3;
+    border-top: 2px solid rgb(255, 0, 0);
+    background-color: #2b2a2a;
 }
 
 .mylogo {
@@ -635,15 +654,6 @@ footer {
   /* background-position-x: ;
   background-position-y: bottom; */
 }
-/* 
-.bgdesktop {
-  position: absolute;
-  width: 1003.13px;
-  height: 769.27px;
-  left: 1744.68px;
-  top: -135px;  
-  transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
-} */
 
 .socialbtns-main {
   height: 100%;
@@ -698,5 +708,99 @@ color: #F4F5F7;
 flex: none;
 order: 2;
 flex-grow: 0;
+}
+
+.myworks {
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 24px;
+}
+
+#work-headline {
+  border: none;
+  line-height: 70px;
+}
+
+.line {
+  width: 50%;
+  border: 1px solid black;
+}
+
+.multi-storybg {
+  height: 470px;
+  padding: 0;
+  margin: 0;
+  width: 50%;
+}
+
+.multi-storybg img {
+  width: 527px;
+  height: auto;
+}
+
+.div-myworks {
+  height: auto;
+}
+
+.projects-section {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#about-me {
+  background-image: url(/images/aboutme-desktop.png);
+  background-repeat: no-repeat;
+}
+
+#proj1:hover {
+  background-image: url(/images/desktop\ project-1.png);
+}
+.works-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.work-image {
+  background-size: cover;
+  margin: 0;
+  width: 684px;
+  height: 448px;
+}
+#pro-languages {
+  display: grid;
+  flex-direction: column;
+  width: 100vw;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+}
+.dt-list {
+  flex-direction: column;
+}
+.lang-headings {
+  position: relative;
+}
+.rectangle {
+  position: absolute;
+  left: 50px;
+}
+
+.square {
+  position: absolute;
+  left: 313px;
+}
+
+.circle {
+  position: absolute;
+  left: 600px;
+}
+
+#for-getintouch {
+  grid-template-columns: 1fr 1fr;
+}
+.fullname-hide {
+  display: none;
+}
+#myform {
+  display: flex;
+  flex-direction: column;
 }
 }
