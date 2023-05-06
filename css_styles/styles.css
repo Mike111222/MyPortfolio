@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* the toolbar styles */
 header {
   display: flex;
@@ -12,7 +16,6 @@ header {
   background-color: #3e3c3c;
   align-items: center;
   padding: 0 2rem;
-  border-bottom: 1px solid red;
   color: rgb(255, 255, 255);
   width: 100%;
   height: 4.7rem;
@@ -54,6 +57,11 @@ i {
   padding: 125px 25px;
   gap: 13px;
   position: relative;
+  background-image: url(/images/Illustration.png);
+  background-repeat: no-repeat;
+  background-position: absolute;
+  background-position-x: right;
+  background-position-y: bottom;
 }
 
 /* 2-Main heading styles */
@@ -98,14 +106,6 @@ i {
   height: 123px;
 }
 
-/* background image styles */
-.bgimage {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-}
-
 /* list styles */
 div ul {
   display: flex;
@@ -121,6 +121,14 @@ div ul li {
   list-style: none;
 }
 
+.mymenu {
+  display: block;
+}
+
+.nav-list {
+  display: none;
+}
+
 /* social buttons container styles */
 .socialbtns {
   display: flex;
@@ -134,9 +142,20 @@ div ul li {
 }
 
 /* works section styles */
+#myworks {
+  display: grid;
+  width: 100%;
+  height: auto;
+  background-color: #e5e5e5;
+  padding: 0 24px;
+  padding-top: 120px;
+  gap: 12px;
+  align-content: center;
+}
+
 .myworks {
   display: grid;
-  width: 100vw;
+  width: 100%;
   height: auto;
   background-color: #e5e5e5;
   padding: 120px 24px;
@@ -155,7 +174,9 @@ div ul li {
   height: 83px;
 }
 
-#work-image {
+.work-image {
+  background-image: url(/images/Multi-Post\ Stories.png);
+  background-repeat: no-repeat;
   margin-top: 60px;
   width: 327px;
   height: 237px;
@@ -258,9 +279,10 @@ div ul li {
 }
 
 /* project 1 styles */
+
 .multi-storybg {
   margin-top: 4rem;
-  height: 225px;
+  height: auto;
   width: 327px;
 }
 
@@ -510,6 +532,7 @@ div ul li {
 
 .style-listitems {
   margin: 20px 0;
+  flex-direction: column;
 }
 
 /* get in touch styles */
@@ -542,8 +565,16 @@ div ul li {
   font-family: "Inter", sans-serif;
 }
 
+.on-mobile {
+  display: block;
+}
+
+.on-desktop {
+  display: none;
+}
+
 #myform {
-  display: flex;
+  display: grid;
   flex-direction: column;
   flex-wrap: wrap;
   font-family: "Inter", sans-serif;
@@ -586,4 +617,368 @@ footer {
 
 .footerbtns {
   display: flex;
+}
+
+/* Desktop version */
+
+@media screen and (min-width: 768px) {
+  .mymenu {
+    visibility: hidden;
+  }
+
+  #myheader {
+    background-color: #3e3c3c;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-list {
+    display: flex;
+    margin-right: 206px;
+    margin-top: 26px;
+  }
+
+  .nav-list li {
+    list-style: none;
+    padding-right: 32px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .nav-list li a {
+    color: #fff;
+  }
+
+  .nav-list li a:hover {
+    color: grey;
+  }
+
+  .mylogo {
+    margin-left: 154px;
+  }
+
+  .mybiopage {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    height: 870px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-image: url(/images/Group-desktop.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #1c1a19;
+  }
+
+  .socialbtns-main {
+    height: 100%;
+    justify-items: center;
+    padding-top: 30px;
+  }
+
+  .socialbtns-main ul {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+  }
+
+  .mybio {
+    padding-left: 75px;
+    width: 1440px;
+    left: 0;
+    top: 0;
+  }
+
+  .mybio h1 {
+    font-family: "Crete Round", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 78px;
+    line-height: 82px;
+    width: 470px;
+    height: 160px;
+    top: 192px;
+  }
+
+  .mybio h2 {
+    width: 566px;
+    height: 24px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .mybio p {
+    width: 566px;
+    height: 123px;
+    font-family: "Inter", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #f4f5f7;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+
+  #myworks {
+    background-color: #fff;
+    padding-left: 141px;
+  }
+
+  .myworks {
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    background-color: #fff;
+  }
+
+  #work-headline {
+    border: none;
+    line-height: 70px;
+  }
+
+  .line {
+    width: 55%;
+    border: 1px solid grey;
+    margin-top: 36px;
+  }
+
+  .multi-storybg {
+    height: 470px;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+  }
+
+  .div-myworks {
+    height: auto;
+  }
+
+  #myworks-btn {
+    margin-top: 25px;
+  }
+
+  .projects-section {
+    display: flex;
+    flex-flow: wrap;
+    background-color: #fff;
+    padding: 24px 143.5px 130px 141px;
+    gap: 24px;
+  }
+
+  #about-me {
+    background-image: url(/images/aboutme-desktop.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-color: #262626;
+  }
+
+  #forme {
+    font-family: 'Crete Round', sans-serif;
+    font-size: 72px;
+    font-weight: 300;
+    line-height: 82px;
+    letter-spacing: 2;
+    text-align: left;
+    width: 566px;
+    height: 78px;
+  }
+
+  #about-me p {
+    font-family: "Inter", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0;
+    text-align: left;
+    width: 566px;
+    height: 148px;
+    margin-top: 17px;
+    color: #f4f5f7;
+  }
+
+  .resume-btn {
+    bottom: -10%;
+  }
+
+  #proj1:hover {
+    background-image: url(/images/desktop\ project-1.png);
+    cursor: pointer;
+  }
+
+  .project-card:hover,
+  .project-card:focus {
+    display: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+  #proj2:hover {
+    background-image: url(/images/desktop\ project-2.png);
+    cursor: pointer;
+  }
+
+  #proj3:hover {
+    background-image: url(/images/desktop-project-3.png);
+    cursor: pointer;
+  }
+
+  #proj1:hover > .projbtn {
+    display: block;
+  }
+
+  #proj2:hover > .projbtn {
+    display: block;
+  }
+
+  #proj3:hover > .projbtn {
+    display: block;
+  }
+
+  .aboutme-card {
+    padding-left: 60px;
+  }
+
+  .works-title {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 25px;
+  }
+
+  .work-image {
+    background-image: url(/images/myworks-desktop.png);
+    background-size: cover;
+    margin: 0;
+    width: 684px;
+    height: 448px;
+  }
+
+  #pro-languages {
+    display: grid;
+    flex-direction: column;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    background-color: #262626;
+  }
+
+  .dt-list {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .div-skills {
+    width: auto;
+    height: 263px;
+  }
+
+  .my-thumbnail {
+    position: relative;
+  }
+
+  .rectangle {
+    position: absolute;
+    left: -30px;
+  }
+
+  .square {
+    position: absolute;
+    left: -32px;
+  }
+
+  .circle {
+    position: absolute;
+    left: 18px;
+  }
+
+  #for-getintouch {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: #fff;
+  }
+
+  .on-mobile {
+    display: none;
+  }
+
+  .on-desktop {
+    display: block;
+  }
+
+  #myform {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 100px 158px 154px 0;
+  }
+
+  .firstlast-name {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-input {
+    width: 315px;
+    height: auto;
+  }
+
+  .input {
+    background-color: #fff;
+  }
+
+  #textarea {
+    background-color: #faf8f7;
+  }
+
+  .centerbtn button {
+    margin-right: 200px;
+  }
+
+  .container-touch {
+    width: 40%;
+    height: 100%;
+    margin: 0;
+    align-content: flex-start;
+  }
+
+  .container-touch h2 {
+    height: 100%;
+    margin-top: 112px;
+    margin-left: 80px;
+    text-align: left;
+  }
+
+  .lets-intouch {
+    width: 455px;
+    height: 256px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    color: #262626;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .container-form {
+    width: 60%;
+    height: 100%;
+  }
 }
