@@ -646,7 +646,7 @@ footer {
     font-size: 15px;
     font-weight: 600;
     line-height: 20px;
-    font-family: "Inter",sans-serif;
+    font-family: "Inter", sans-serif;
   }
 
   .nav-list li a {
@@ -812,7 +812,8 @@ footer {
     cursor: pointer;
   }
 
-  .project-card:hover, .project-card:focus {
+  .project-card:hover,
+  .project-card:focus {
     display: none;
     transition: all 0.2s ease-in-out;
   }
