@@ -12,7 +12,6 @@ header {
   background-color: #3e3c3c;
   align-items: center;
   padding: 0 2rem;
-  border-bottom: 1px solid red;
   color: rgb(255, 255, 255);
   width: 100%;
   height: 4.7rem;
@@ -144,7 +143,8 @@ div ul li {
   width: 100%;
   height: auto;
   background-color: #e5e5e5;
-  padding: 120px 24px;
+  padding: 0 24px;
+  padding-top: 120px;
   gap: 12px;
   align-content: center;
 }
@@ -644,6 +644,7 @@ footer {
   .nav-list li a:hover {
     border-top: 2px solid rgb(255, 0, 0);
     background-color: #2b2a2a;
+    color: grey;
   }
 
   .mylogo {
@@ -721,7 +722,7 @@ footer {
 
   .myworks {
     grid-template-columns: 1fr 1fr;
-    padding: 20px 24px;
+    padding: 0;
   }
 
   #work-headline {
@@ -730,8 +731,9 @@ footer {
   }
 
   .line {
-    width: 50%;
-    border: 1px solid black;
+    width: 55%;
+    border: 1px solid grey;
+    margin-top: 36px;
   }
 
   .multi-storybg {
@@ -758,19 +760,25 @@ footer {
   #forme {
     font-family: 'Crete Round', sans-serif;
     font-size: 72px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 82px;
-    letter-spacing: 0;
+    letter-spacing: 2;
     text-align: left;
+    width: 566px;
+    height: 78px;
   }
 
   #about-me p {
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 23px;
     letter-spacing: 0;
     text-align: left;
+    width: 566px;
+    height: 148px;
+    margin-top: 17px;
+    color: #f4f5f7;
   }
 
   .resume-btn {
@@ -809,10 +817,14 @@ footer {
     display: block;
   }
 
+  .aboutme-card {
+    padding-left: 60px;
+  }
+
   .works-title {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 25px;
   }
 
   .work-image {
@@ -890,8 +902,12 @@ footer {
   }
 
   .form-input {
-    width: 300px;
+    width: 315px;
     height: auto;
+  }
+
+  .text-area {
+    background: #fbf8f7;
   }
 
   .centerbtn button {
@@ -907,9 +923,25 @@ footer {
 
   .container-touch h2 {
     height: 100%;
-    margin-top: 135px;
+    margin-top: 112px;
     margin-left: 80px;
     text-align: left;
+  }
+
+  .lets-intouch {
+    width: 455px;
+    height: 256px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    color: #262626;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
   }
 
   .container-form {
