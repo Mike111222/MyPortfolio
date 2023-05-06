@@ -733,6 +733,7 @@ footer {
 
   #myworks {
     background-color: #fff;
+    padding-left: 141px;
   }
 
   .myworks {
@@ -768,8 +769,11 @@ footer {
   }
 
   .projects-section {
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-flow: wrap;
     background-color: #fff;
+    padding: 24px 143.5px 130px 141px;
+    gap: 24px;
   }
 
   #about-me {
