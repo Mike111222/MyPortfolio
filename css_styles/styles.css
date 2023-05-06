@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* the toolbar styles */
 header {
   display: flex;
@@ -622,8 +626,8 @@ footer {
     visibility: hidden;
   }
 
-  html {
-    overflow: none;
+  body {
+    overflow-x: hidden;
   }
 
   .nav-list {
@@ -642,7 +646,7 @@ footer {
   }
 
   .nav-list li a:hover {
-    border-top: 2px solid rgb(255, 0, 0);
+    border-top: 1px solid rgb(255, 0, 0);
     background-color: #2b2a2a;
     color: grey;
   }
@@ -745,6 +749,10 @@ footer {
 
   .div-myworks {
     height: auto;
+  }
+
+  #myworks-btn {
+    margin-top: 25px;
   }
 
   .projects-section {
@@ -906,7 +914,7 @@ footer {
     height: auto;
   }
 
-  .text-area {
+  #text-area {
     background: #fbf8f7;
   }
 
