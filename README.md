@@ -97,7 +97,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Coming soon
+<a href="https://mike111222.github.io/MyPortfolio/">Live Demo Link</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,7 +105,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-- Install VS Code and run it on Live Server
+- Install VS Code and run it on Live Server if you want to check how the code works on local host. 
 
 ### Prerequisites
 
@@ -131,7 +131,7 @@ Clone this repository to your desired folder by running this command.
 
 ```sh
   cd my-folder
-  git clone git@github.com:Mike111222/PortfolioMobileFirstProject-1.git
+  git clone git@github.com:Mike111222/MyPortfolio.git
   ```
 
 ### Install
@@ -140,7 +140,7 @@ Coming soon
 
 ### Usage
 
-Open index.html file in VS Code, run via live server extension.
+Open index.html file in VS Code, run via live server extension and see how the code works. You can also visit the Online Demo Link.
 
 ### Run tests
 
@@ -173,9 +173,9 @@ Coming soon.
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] Add nav bar
-- [ ] Add some paragraph
-- [ ] Add more styles
+- [ ] Add nav bar and a menu page for mobile users as well.
+- [ ] Add some new projects
+- [ ] Add more styles and animation to make it more apealing.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -195,7 +195,7 @@ Feel free to check the [issues page](../../issues/).
 
 
 
-If you like this project, just give it a star ⭐️.
+If you like this project, just reach out to me for more projects even better than this, and please give it a star ⭐️.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
