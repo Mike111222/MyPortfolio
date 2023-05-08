@@ -56,7 +56,7 @@ i {
   padding: 125px 25px;
   gap: 13px;
   position: relative;
-  background-image: url(/images/Illustration.png);
+  background-image: url(../images/Illustration.png);
   background-repeat: no-repeat;
   background-position: absolute;
   background-position-x: right;
@@ -158,7 +158,7 @@ div ul li {
   width: 100%;
   height: auto;
   background-color: #e5e5e5;
-  padding: 120px 24px;
+  justify-content: center;
   gap: 12px;
   align-content: center;
 }
@@ -175,7 +175,7 @@ div ul li {
 }
 
 .work-image {
-  background-image: url(/images/Multi-Post\ Stories.png);
+  background-image: url(../images/Multi-Post\ Stories.png);
   background-repeat: no-repeat;
   margin-top: 60px;
   width: 327px;
@@ -273,15 +273,16 @@ div ul li {
   width: 100vw;
   height: auto;
   background-color: #e5e5e5;
-  padding: 10px 24px;
-  gap: 12px;
-  align-content: center;
+  padding-top: 24px;
+  padding-bottom: 110px;
+  gap: 24px;
+  justify-content: center;
 }
 
 /* project 1 styles */
 
 .multi-storybg {
-  margin-top: 4rem;
+  margin-top: 1rem;
   height: auto;
   width: 327px;
 }
@@ -328,6 +329,7 @@ div ul li {
 
 #myworks-btn {
   width: 8rem;
+  margin-top: 15px;
 }
 
 #proj1 {
@@ -339,7 +341,7 @@ div ul li {
   gap: 12px;
   align-content: center;
   width: 327px;
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.5) 61.94%), url(/images/Img\ Placeholder-2.png);
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.5) 61.94%), url(../images/Img\ Placeholder-2.png);
   background-size: cover;
 }
 
@@ -348,7 +350,7 @@ div ul li {
   width: 327px;
   height: 386px;
   position: relative;
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.5) 61.94%), url(/images/Img\ Placeholder-2.png);
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.5) 61.94%), url(../images/Img\ Placeholder-2.png);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -362,7 +364,7 @@ div ul li {
   width: 327px;
   height: 386px;
   position: relative;
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.5) 61.94%), url(/images/Img\ Placeholder-2.png);
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.5) 61.94%), url(../images/Img\ Placeholder-2.png);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -376,7 +378,7 @@ div ul li {
   width: 327px;
   height: 386px;
   position: relative;
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.5) 61.94%), url(/images/Img\ Placeholder-2.png);
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.5) 61.94%), url(../images/Img\ Placeholder-2.png);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -390,7 +392,7 @@ div ul li {
   width: 327px;
   height: 386px;
   position: relative;
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.5) 61.94%), url(/images/Img\ Placeholder-2.png);
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.5) 61.94%), url(../images/Img\ Placeholder-2.png);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -404,7 +406,7 @@ div ul li {
   width: 327px;
   height: 386px;
   position: relative;
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.5) 61.94%), url(/images/Img\ Placeholder-2.png);
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.5) 61.94%), url(../images/Img\ Placeholder-2.png);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -424,7 +426,7 @@ div ul li {
   padding: 120px 24px;
   border-bottom: 1px solid white;
   top: calc(50% - 0px / 2 + 0.5px);
-  background-image: url(/images/illustration-about-me-mobile.png);
+  background-image: url(../images/illustration-about-me-mobile.png);
   background-repeat: no-repeat;
   background-position: right 0 bottom 0;
 }
@@ -655,6 +657,7 @@ footer {
 
   .nav-list li a:hover {
     color: grey;
+    transition: all 0.5s ease-in-out;
   }
 
   .mylogo {
@@ -669,7 +672,7 @@ footer {
     width: 100%;
     left: 0;
     top: 0;
-    background-image: url(/images/Group-desktop.png);
+    background-image: url(../images/Group-desktop.png);
     background-repeat: no-repeat;
     background-position: right;
     background-color: #1c1a19;
@@ -772,12 +775,13 @@ footer {
     display: flex;
     flex-flow: wrap;
     background-color: #fff;
-    padding: 24px 143.5px 130px 141px;
+    padding: 24px 143.5px 130px 85px;
     gap: 24px;
+    justify-content: center;
   }
 
   #about-me {
-    background-image: url(/images/aboutme-desktop.png);
+    background-image: url(../images/aboutme-desktop.png);
     background-repeat: no-repeat;
     background-position-y: center;
     background-color: #262626;
@@ -812,7 +816,7 @@ footer {
   }
 
   #proj1:hover {
-    background-image: url(/images/desktop\ project-1.png);
+    background-image: url(../images/desktop\ project-1.png);
     cursor: pointer;
   }
 
@@ -823,12 +827,12 @@ footer {
   }
 
   #proj2:hover {
-    background-image: url(/images/desktop\ project-2.png);
+    background-image: url(../images/desktop\ project-2.png);
     cursor: pointer;
   }
 
   #proj3:hover {
-    background-image: url(/images/desktop-project-3.png);
+    background-image: url(../images/desktop-project-3.png);
     cursor: pointer;
   }
 
@@ -855,7 +859,7 @@ footer {
   }
 
   .work-image {
-    background-image: url(/images/myworks-desktop.png);
+    background-image: url(../images/myworks-desktop.png);
     background-size: cover;
     margin: 0;
     width: 684px;
