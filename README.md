@@ -97,7 +97,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-You can see my Portfolio by just visiting this <a href="https://mike111222.github.io/MyPortfolio/">Live Demo Link</a>
+<a href="https://mike111222.github.io/MyPortfolio/">Mike's Personal Portfolio Live Demo Link</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
