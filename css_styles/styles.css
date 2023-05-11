@@ -772,10 +772,10 @@ footer {
   }
 
   .projects-section {
-    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
     flex-flow: wrap;
     background-color: #fff;
-    padding: 24px 143.5px 130px 85px;
+    padding: 24px 143.5px 130px 140px;
     gap: 24px;
     justify-content: center;
   }
@@ -815,6 +815,10 @@ footer {
     bottom: -10%;
   }
 
+  .work-btn:hover {
+    transition: all 0.3s ease-in-out;
+  }
+
   #proj1:hover {
     background-image: url(../images/desktop\ project-1.png);
     cursor: pointer;
@@ -822,8 +826,8 @@ footer {
 
   .project-card:hover,
   .project-card:focus {
-    display: none;
-    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;    
   }
 
   #proj2:hover {
