@@ -646,7 +646,8 @@ div ul li {
 }
 
 .input {
-  margin-top: 25px;
+  width: 100%;
+  margin-bottom: 25px;
   padding: 12px;
   background-color: #fcfbfb;
   border: none;
@@ -1049,9 +1050,10 @@ footer {
 
   #for-getintouch {
     display: flex;
+    align-items: flex-start;
     width: 100%;
     height: 100%;
-    padding: 0;
+    padding: 4rem;
     background-color: #fff;
   }
 
@@ -1067,7 +1069,6 @@ footer {
     display: flex;
     flex-direction: column;
     height: 100%;
-    margin: 100px 158px 154px 0;
   }
 
   .firstlast-name {
@@ -1100,26 +1101,15 @@ footer {
   }
 
   .container-touch h2 {
-    height: 100%;
-    margin-top: 112px;
-    margin-left: 80px;
     text-align: left;
   }
 
   .lets-intouch {
-    width: 455px;
-    height: 256px;
+    width: auto;
     font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-    display: flex;
-    align-items: center;
+    font-size: 2.3rem;
     color: #262626;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    margin-right: 0.4em;
   }
 
   .container-form {
