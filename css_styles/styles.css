@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,7 +23,7 @@ header {
 }
 
 /* My Logo styles */
-.mylogo {
+.logo {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -34,13 +35,111 @@ header {
   transition: all 0.3s ease-in-out;
 }
 
-.mylogo:hover {
+.logo:hover {
   color: #ff6b00;
+  cursor: pointer;
+  scale: 1.1;
+}
+
+/* the navbar styles */
+
+.hamburger {
+  display: block;
+}
+
+.hamburger:hover {
   cursor: pointer;
 }
 
-i {
-  cursor: pointer;
+.no-scroll {
+  overflow: hidden;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #fff5e1;
+  text-decoration: none;
+}
+
+.nav-menu {
+  position: fixed;
+  display: none;
+  left: -100%;
+  top: 70px;
+  gap: 3rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #3c3a39;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+
+ul li a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav-menu.active li > a {
+  color: #fff5e1;
+  font-family: "Inter", sans-serif;
+  margin: 16px 0;
+}
+
+.nav-item {
+  margin: 16px 0;
+}
+
+.nav-menu.active {
+  left: 0;
+  background-color: #3c3a39;
+  height: 100%;
+  display: flex;
+  padding: 1rem 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  align-items: start;
+  z-index: 99;
+  gap: 5px;
+}
+
+.underline {
+  width: 90%;
+  height: 0.1px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.disappear {
+  display: none;
 }
 
 /* the headline styles */
@@ -55,7 +154,7 @@ i {
   width: 100vw;
   height: auto;
   padding: 125px 25px;
-  gap: 13px;
+  gap: 25px;
   position: relative;
   background-image: url(../images/Illustration.png);
   background-repeat: no-repeat;
@@ -112,21 +211,8 @@ div ul {
   justify-content: space-evenly;
 }
 
-ul li a {
-  text-decoration: none;
-  padding: 10px;
-}
-
 div ul li {
   list-style: none;
-}
-
-.mymenu {
-  display: block;
-}
-
-.nav-list {
-  display: none;
 }
 
 /* social buttons container styles */
@@ -624,12 +710,15 @@ footer {
 /* Desktop version */
 
 @media screen and (min-width: 768px) {
-  .mymenu {
-    visibility: hidden;
-  }
-
   #myheader {
     background-color: #3e3c3c;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
   }
 
   body {
@@ -642,26 +731,68 @@ footer {
     margin-top: 26px;
   }
 
-  .nav-list li {
+  li {
     list-style: none;
-    padding-right: 32px;
-    font-size: 15px;
+  }
+
+  a {
+    color: #fff5e1;
+    text-decoration: none;
     font-weight: 600;
-    line-height: 20px;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
   }
 
-  .nav-list li a {
-    color: #fff;
+  .navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
   }
 
-  .nav-list li a:hover {
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    left: 0;
+    top: 0;
+    position: relative;
+    flex-direction: row;
+    padding-right: 100px;
+  }
+
+  .disappear {
+    display: block;
+  }
+
+  .nav-branding {
+    font-size: 2rem;
+  }
+
+  .nav-link {
+    transition: 0.7s ease;
+  }
+
+  .nav-link:hover {
     color: grey;
-    transition: all 0.5s ease-in-out;
+    cursor: pointer;
   }
 
-  .mylogo {
-    margin-left: 154px;
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 130px;
+    font-size: 20px;
+    line-height: 55px;
+    width: 10rem;
   }
 
   .mybiopage {
@@ -827,7 +958,7 @@ footer {
   .project-card:hover,
   .project-card:focus {
     opacity: 0;
-    transition: all 0.3s ease-in-out;    
+    transition: all 0.3s ease-in-out;
   }
 
   #proj2:hover {
