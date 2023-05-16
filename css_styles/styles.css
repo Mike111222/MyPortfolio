@@ -86,6 +86,10 @@ a {
   text-decoration: none;
 }
 
+header:has(.active) .logo {
+  opacity: 0;
+}
+
 .nav-menu {
   position: fixed;
   display: none;
