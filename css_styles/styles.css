@@ -117,7 +117,11 @@ ul li a {
 }
 
 .nav-item {
+  width: 95%;
   margin: 16px 0;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #fff5e1;
+  text-align: left;
 }
 
 .nav-menu.active {
@@ -132,14 +136,6 @@ ul li a {
   align-items: start;
   z-index: 99;
   gap: 5px;
-}
-
-.underline {
-  width: 90%;
-  height: 0.1px;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
 
 .disappear {
@@ -766,6 +762,12 @@ footer {
     padding-right: 100px;
   }
 
+  .nav-item {
+    border: none;
+    padding-bottom: 0;
+    width: auto;
+  }
+
   .disappear {
     display: block;
   }
@@ -786,10 +788,6 @@ footer {
   .hamburger {
     display: none;
     cursor: pointer;
-  }
-
-  .hidden {
-    display: none;
   }
 
   .logo {
