@@ -713,7 +713,9 @@ footer {
   #myheader {
     background-color: #3e3c3c;
   }
-
+  header {
+    padding: 0px 2rem 0 10rem;
+  }
   .sticky {
     position: fixed;
     top: 0;
@@ -776,7 +778,8 @@ footer {
     font-size: 2rem;
   }
 
-  .nav-link {
+  .nav-link,
+  .nav-link img {
     transition: 0.7s ease;
   }
 
@@ -785,16 +788,17 @@ footer {
     cursor: pointer;
   }
 
+  .nav-link:hover img {
+    filter: opacity(0.7);
+  }
+
   .hamburger {
     display: none;
     cursor: pointer;
   }
 
   .logo {
-    margin-left: 130px;
     font-size: 20px;
-    line-height: 55px;
-    width: 10rem;
   }
 
   .mybiopage {
