@@ -718,9 +718,11 @@ footer {
   #myheader {
     background-color: #3e3c3c;
   }
+
   header {
-    padding: 0px 2rem 0 10rem;
+    padding: 0 2rem 0 10rem;
   }
+
   .sticky {
     position: fixed;
     top: 0;
