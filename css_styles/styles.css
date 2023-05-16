@@ -124,6 +124,10 @@ ul li a {
   text-align: left;
 }
 
+.nav-item:has(.disappear) {
+  border-bottom: none;
+}
+
 .nav-menu.active {
   left: 0;
   background-color: #3c3a39;
@@ -642,7 +646,7 @@ div ul li {
   font-size: 32px;
   line-height: 44px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 90px;
 }
 
 .input {
