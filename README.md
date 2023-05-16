@@ -163,7 +163,7 @@ Coming soon.
 👤 **Muhammad Amran Khan**
 
 - GitHub: [@githubhandle](https://github.com/Mike111222)
-- Twitter: [@twitterhandle](https://twitter.com/engr_imrankhan1)
+- Twitter: [@twitterhandle](https://twitter.com/iMike111222)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/Mike111222)
 
 
