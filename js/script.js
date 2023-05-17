@@ -6,8 +6,8 @@ var myProjects = [
       featuredImage: './images/Img Placeholder-2',
       technologies: ['HTML', 'CSS', 'BootStrap'],
       seeProject: 'See Project',
-      linkLive: '<a href="https://Mike111222.github.io/MyPortfolio/" target="blank">See Live</a>',
-      linkSource: '<a href="https://github.com/Mike111222/MyPortfolio/" target="blank">See Source</a>',
+      linkLive: 'https://Mike111222.github.io/MyPortfolio/',
+      linkSource: 'https://github.com/Mike111222/MyPortfolio/',
     },
     {
       id: 'proj2',
@@ -16,8 +16,8 @@ var myProjects = [
       featuredImage: './images/Img Placeholder-2',
       technologies: ['HTML', 'CSS', 'BootStrap'],
       seeProject: 'See Project',
-      linkLive: '<a href="https://Mike111222.github.io/MyPortfolio/" target="blank">See Live</a>',
-      linkSource: '<a href="https://github.com/Mike111222/MyPortfolio/" target="blank">See Source</a>',
+      linkLive: 'https://Mike111222.github.io/MyPortfolio/',
+      linkSource: 'https://github.com/Mike111222/MyPortfolio/',
     },
     {
       id: 'proj3',
@@ -26,8 +26,8 @@ var myProjects = [
       featuredImage: './images/Img Placeholder-2',
       technologies: ['HTML', 'CSS', 'BootStrap'],
       seeProject: 'See Project',
-      linkLive: '<a href="https://Mike111222.github.io/MyPortfolio/" target="blank">See Live</a>',
-      linkSource: '<a href="https://github.com/Mike111222/MyPortfolio/" target="blank">See Source</a>',
+      linkLive: 'https://Mike111222.github.io/MyPortfolio/',
+      linkSource: 'https://github.com/Mike111222/MyPortfolio/',
     },
     {
       id: 'proj4',
@@ -36,8 +36,8 @@ var myProjects = [
       featuredImage: './images/Img Placeholder-2',
       technologies: ['HTML', 'CSS', 'BootStrap'],
       seeProject: 'See Project',
-      linkLive: '<a href="https://Mike111222.github.io/MyPortfolio/" target="blank">See Live</a>',
-      linkSource: '<a href="https://github.com/Mike111222/MyPortfolio/" target="blank">See Source</a>',
+      linkLive: 'https://Mike111222.github.io/MyPortfolio/',
+      linkSource: 'https://github.com/Mike111222/MyPortfolio/',
     },
     {
       id: 'proj5',
@@ -46,8 +46,8 @@ var myProjects = [
       featuredImage: './images/Img Placeholder-2',
       technologies: ['HTML', 'CSS', 'BootStrap'],
       seeProject: 'See Project',
-      linkLive: '<a href="https://Mike111222.github.io/MyPortfolio/" target="blank">See Live</a>',
-      linkSource: '<a href="https://github.com/Mike111222/MyPortfolio/" target="blank">See Source</a>',
+      linkLive: 'https://Mike111222.github.io/MyPortfolio/',
+      linkSource: 'https://github.com/Mike111222/MyPortfolio/',
     },
     {
       id: 'proj6',
@@ -56,8 +56,8 @@ var myProjects = [
       featuredImage: './images/Img Placeholder-2',
       technologies: ['HTML', 'CSS', 'BootStrap'],
       seeProject: 'See Project',
-      linkLive: '<a href="https://Mike111222.github.io/MyPortfolio/" target="blank">See Live</a>',
-      linkSource: '<a href="https://github.com/Mike111222/MyPortfolio/" target="blank">See Source</a>',
+      linkLive: 'https://Mike111222.github.io/MyPortfolio/',
+      linkSource: 'https://github.com/Mike111222/MyPortfolio/',
     }
   ];
   
