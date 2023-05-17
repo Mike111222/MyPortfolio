@@ -1,7 +1,7 @@
 var myProjects = [
     {
       id: 'proj1',
-      name: 'Professional Art Printing Data',
+      name: 'Multi-Post Stories',
       description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
       featuredImage: './images/Img Placeholder-2',
       technologies: ['HTML', 'CSS', 'BootStrap'],
@@ -61,9 +61,9 @@ var myProjects = [
     }
   ];
   
-//   projects.forEach(project => {
-//     console.log(project);
-// });
+myProjects.forEach(project => {
+  console.log(project.name);
+});
 //   var projectsContainer = document.getElementById('projects-container');
 //   console.log(projectsContainer)
 //   projects.map((card) => {
