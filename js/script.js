@@ -5,7 +5,6 @@ var myProjects = [
       description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
       featuredImage: './images/Img Placeholder-2',
       technologies: ['HTML', 'CSS', 'BootStrap'],
-      seeProject: 'See Project',
       linkLive: 'https://Mike111222.github.io/MyPortfolio/',
       linkSource: 'https://github.com/Mike111222/MyPortfolio/',
     },
@@ -15,7 +14,6 @@ var myProjects = [
       description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
       featuredImage: './images/Img Placeholder-2',
       technologies: ['HTML', 'CSS', 'BootStrap'],
-      seeProject: 'See Project',
       linkLive: 'https://Mike111222.github.io/MyPortfolio/',
       linkSource: 'https://github.com/Mike111222/MyPortfolio/',
     },
@@ -25,7 +23,6 @@ var myProjects = [
       description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
       featuredImage: './images/Img Placeholder-2',
       technologies: ['HTML', 'CSS', 'BootStrap'],
-      seeProject: 'See Project',
       linkLive: 'https://Mike111222.github.io/MyPortfolio/',
       linkSource: 'https://github.com/Mike111222/MyPortfolio/',
     },
@@ -35,7 +32,6 @@ var myProjects = [
       description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
       featuredImage: './images/Img Placeholder-2',
       technologies: ['HTML', 'CSS', 'BootStrap'],
-      seeProject: 'See Project',
       linkLive: 'https://Mike111222.github.io/MyPortfolio/',
       linkSource: 'https://github.com/Mike111222/MyPortfolio/',
     },
@@ -45,7 +41,6 @@ var myProjects = [
       description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
       featuredImage: './images/Img Placeholder-2',
       technologies: ['HTML', 'CSS', 'BootStrap'],
-      seeProject: 'See Project',
       linkLive: 'https://Mike111222.github.io/MyPortfolio/',
       linkSource: 'https://github.com/Mike111222/MyPortfolio/',
     },
@@ -55,15 +50,11 @@ var myProjects = [
       description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
       featuredImage: './images/Img Placeholder-2',
       technologies: ['HTML', 'CSS', 'BootStrap'],
-      seeProject: 'See Project',
       linkLive: 'https://Mike111222.github.io/MyPortfolio/',
       linkSource: 'https://github.com/Mike111222/MyPortfolio/',
     }
   ];
-  
-myProjects.forEach(project => {
-  console.log(project.name);
-});
+
 //   var projectsContainer = document.getElementById('projects-container');
 //   console.log(projectsContainer)
 //   projects.map((card) => {
