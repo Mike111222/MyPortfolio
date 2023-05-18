@@ -36,6 +36,7 @@ const myProjects = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
     featuredImage: './images/Img Placeholder-2',
     technologies: ['HTML', 'CSS', 'BootStrap'],
+    seeProject: 'See Project',
     linkLive: 'https://Mike111222.github.io/MyPortfolio/',
     linkSource: 'https://github.com/Mike111222/MyPortfolio/',
   },
@@ -45,6 +46,7 @@ const myProjects = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
     featuredImage: './images/Img Placeholder-2',
     technologies: ['HTML', 'CSS', 'BootStrap'],
+    seeProject: 'See Project',
     linkLive: 'https://Mike111222.github.io/MyPortfolio/',
     linkSource: 'https://github.com/Mike111222/MyPortfolio/',
   },
@@ -54,6 +56,7 @@ const myProjects = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
     featuredImage: './images/Img Placeholder-2',
     technologies: ['HTML', 'CSS', 'BootStrap'],
+    seeProject: 'See Project',
     linkLive: 'https://Mike111222.github.io/MyPortfolio/',
     linkSource: 'https://github.com/Mike111222/MyPortfolio/',
   },
@@ -63,6 +66,7 @@ const myProjects = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
     featuredImage: './images/Img Placeholder-2',
     technologies: ['HTML', 'CSS', 'BootStrap'],
+    seeProject: 'See Project',
     linkLive: 'https://Mike111222.github.io/MyPortfolio/',
     linkSource: 'https://github.com/Mike111222/MyPortfolio/',
   },
@@ -72,6 +76,7 @@ const myProjects = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
     featuredImage: './images/Img Placeholder-2',
     technologies: ['HTML', 'CSS', 'BootStrap'],
+    seeProject: 'See Project',
     linkLive: 'https://Mike111222.github.io/MyPortfolio/',
     linkSource: 'https://github.com/Mike111222/MyPortfolio/',
   },
@@ -81,6 +86,7 @@ const myProjects = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
     featuredImage: './images/Img Placeholder-2',
     technologies: ['HTML', 'CSS', 'BootStrap'],
+    seeProject: 'See Project',
     linkLive: 'https://Mike111222.github.io/MyPortfolio/',
     linkSource: 'https://github.com/Mike111222/MyPortfolio/',
   }
@@ -100,9 +106,8 @@ myProjects.map((card) => {
           <li class="flex-items item3">${card.technologies[2]}</li>
         </ul>
       </div>
-      <button type="button" id="myBtn" class="work-btn projbtn on-mobile">See Project</button>
+      <button type="button" id="myBtn" class="work-btn projbtn on-mobile">${card.seeProject}</button>
     </div>
-
     <!-- The Modal -->
     <div id="myModal" class="modal">
 
@@ -120,61 +125,68 @@ myProjects.map((card) => {
           </div>
         </div>
         <div class="modal-body">
-          <div><img src="./images/popup-desktop.png" alt="project image"></div>
+          <div><img src="./images/popup-desktop.png" class="modal-img"alt="project image"></div>
           <div>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
               when an unknown printer took a galley of type and scrambled it 1960s.
             </p><br>
-            <p>
+            <p class="hide">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
               when an unknown printer took a galley of type and scrambled it 1960s with the 
               releax map lapora verita.
             </p>
-            <div>
-              <a href="${card.linkLive}">See Live</a>
-              <a href="${card.linkSource}">See Source</a>
-            </a>
+            <div class="btns-div">
+            <a href="${card.linkLive}"><img src="./images/See Live.png" class="img-btn" alt="Live Link"></a>
+            <a href="${card.linkSource}"><img src="./images/See Source.png" class="img-btn" alt="source code"></a>
+      
+  
+      </div>
           </div>
         </div>
       </div>
     </div>
-    `;
+  
+`;    
   return ('');
 });
 
-/**
- * These lines are taken from https://www.w3schools.com/howto/howto_css_modals.asp
- * and I have modified according to my project
- */
 
 // Get the modal
-var modal = document.getElementById("myModal");
 
+const modal = document.getElementById("myModal");
+const span = document.getElementsByClassName("close")[0];
+span.onclick = function () {
+  console.log('clicked')
+  modal.style.display = 'none';
+}
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+const proBtn = document.getElementsByClassName("projbtn");
+console.log(proBtn);
+Array.from(proBtn).forEach(button => {
+  button.addEventListener("click", () => {
+    // Perform desired action here
+    document.body.classList.toggle('no-scroll');
+    modal.style.display = 'block';
+    
+    console.log("Button clicked!");
+  });
+});
+const modalClose = document.querySelector('.close');
+    modalClose.addEventListener('click', () => {
+      modal.classList.remove('act');
+      document.body.classList.remove('no-scroll');
+    });
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+};
+  
 
 // const allProjects = [
 //   {
@@ -247,42 +259,3 @@ window.onclick = function(event) {
 //     linkSource: '<a href="https://github.com/Mike111222/MyPortfolio/" target="blank">See Source</a>',
 //   }
 // ];
-
-//pop-up section code
-/* const seeProject = document.querySelectorAll('.work-btn');
-const popMenu = document.querySelector('.seePopup');
-
-myProjects.forEach((btn, index) => {
-  btn.addEventListener('click', () => {
-    document.body.classList.toggle('no-scroll');
-    popMenu.classList.add('act');
-    popMenu.innerHTML = `
-      <section id="popup" class="popup">
-      <div id="popup-title">
-      <h3 class="popup-heading forflex">${myProjects[index].name}</h3>
-      <span class="close-btn">&times</span>
-      <div class="forflex">
-      <li class="flex-item">${myProjects[index].technologies[0]}</li>
-      <li class="flex-item">${myProjects[index].technologies[1]}</li>
-      <li class="flex-item">${myProjects[index].technologies[2]}</li>
-      </div>
-      </div>
-      <div class="popup-card">
-      <div class="popup-image"><img src="${myProjects[index].featuredImage}" alt="something">
-      </div>
-      <div class="forflex">
-      <p class="popup-details">${myProjects[index].description}
-      </p>
-      <div class="forflex popup-textbtn">
-      <button id="see-source"
-      class="work-btn">${myProjects[index].linkSource}
-      <img src="./images/Illustration.png" alt="source code">
-      </button>
-      </div>
-      </div>
-      </div>
-      </section>
-      `;
-
-  })
-}); */
