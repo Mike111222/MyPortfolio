@@ -99,31 +99,56 @@ myProjects.map((card) => {
           <li class="flex-items item2">${card.technologies[1]}</li>
           <li class="flex-items item3">${card.technologies[2]}</li>
         </ul>
-    </div>
+      </div>
       <button type="button" id="myBtn" class="work-btn projbtn on-mobile">See Project</button>
     </div>
+
     <!-- The Modal -->
     <div id="myModal" class="modal">
 
-    <!-- Modal content -->
-    <div class="modal-content">
-    <div class="modal-header">
-    <span class="close">&times;</span>
-    <h2>Modal Header</h2>
-       </div>
-    <div class="modal-body">
-    <p>Some text in the Modal Body</p>
-    <p>Some other text...</p>
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>${card.name}</h2>
+          <div class="for-flex projectflex2">
+            <ul>
+              <li class="flex-items item1">${card.technologies[0]}</li>
+              <li class="flex-items item2">${card.technologies[1]}</li>
+              <li class="flex-items item3">${card.technologies[2]}</li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div><img src="./images/popup-desktop.png" alt="project image"></div>
+          <div>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it 1960s.
+            </p><br>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it 1960s with the 
+              releax map lapora verita.
+            </p>
+            <div>
+              <a href="${card.linkLive}">See Live</a>
+              <a href="${card.linkSource}">See Source</a>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="modal-footer">
-    <h3>Modal Footer</h3>
-    </div>
-    </div>
-
-</div>
     `;
   return ('');
 });
+
+/**
+ * These lines are taken from https://www.w3schools.com/howto/howto_css_modals.asp
+ * and I have modified according to my project
+ */
 
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -224,40 +249,40 @@ window.onclick = function(event) {
 // ];
 
 //pop-up section code
-// const seeProject = document.querySelectorAll('.work-btn');
-// const popMenu = document.querySelector('seePopup');
+/* const seeProject = document.querySelectorAll('.work-btn');
+const popMenu = document.querySelector('.seePopup');
 
-// seeProject.forEach((btn, index) => {
-//   btn.addEventListener('click', () => {
-//     document.body.classList.toggle('no-scroll');
-//     popMenu.classList.add('act');
-//     popMenu.innerHTML = `
-//       <section id="popup" class="popup">
-//       <div id="popup-title">
-//       <h3 class="popup-heading forflex">${allProjects[index].name}</h3>
-//       <span class="close-btn">&times</span>
-//       <div class="forflex">
-//       <li class="flex-item">${allProjects[index].technologies[0]}</li>
-//       <li class="flex-item">${allProjects[index].technologies[1]}</li>
-//       <li class="flex-item">${allProjects[index].technologies[2]}</li>
-//       </div>
-//       </div>
-//       <div class="popup-card">
-//       <div class="popup-image"><img src="${allProjects[index].featuredImage}" alt="something">
-//       </div>
-//       <div class="forflex">
-//       <p class="popup-details">${allProjects[index].description}
-//       </p>
-//       <div class="forflex popup-textbtn">
-//       <button id="see-source"
-//       class="work-btn">${allProjects[index].linkSource}
-//       <img src="./images/Illustration.png" alt="source code">
-//       </button>
-//       </div>
-//       </div>
-//       </div>
-//       </section>
-//       `;
+myProjects.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    document.body.classList.toggle('no-scroll');
+    popMenu.classList.add('act');
+    popMenu.innerHTML = `
+      <section id="popup" class="popup">
+      <div id="popup-title">
+      <h3 class="popup-heading forflex">${myProjects[index].name}</h3>
+      <span class="close-btn">&times</span>
+      <div class="forflex">
+      <li class="flex-item">${myProjects[index].technologies[0]}</li>
+      <li class="flex-item">${myProjects[index].technologies[1]}</li>
+      <li class="flex-item">${myProjects[index].technologies[2]}</li>
+      </div>
+      </div>
+      <div class="popup-card">
+      <div class="popup-image"><img src="${myProjects[index].featuredImage}" alt="something">
+      </div>
+      <div class="forflex">
+      <p class="popup-details">${myProjects[index].description}
+      </p>
+      <div class="forflex popup-textbtn">
+      <button id="see-source"
+      class="work-btn">${myProjects[index].linkSource}
+      <img src="./images/Illustration.png" alt="source code">
+      </button>
+      </div>
+      </div>
+      </div>
+      </section>
+      `;
 
-//   })
-// });
+  })
+}); */
