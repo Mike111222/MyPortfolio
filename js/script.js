@@ -90,8 +90,7 @@ const projectsContainer = document.getElementById('projects-container');
 
 myProjects.map((card) => {
   projectsContainer.innerHTML += `
-    <div id="${card.id}"
-    <div class="project-card"
+    <div id="${card.id}" class="project-card">
       <h2 class="work-subheading projecttitle">${card.name}</h2>
       <p class="work-specs projectdetails">${card.description}</p>
       <div class="for-flex projectflex2">
@@ -100,7 +99,6 @@ myProjects.map((card) => {
           <li class="flex-items item2">${card.technologies[1]}</li>
           <li class="flex-items item3">${card.technologies[2]}</li>
         </ul>
-      </div>
     </div>
       <button type="button" id="myBtn" class="work-btn projbtn on-mobile">See Project</button>
     </div>

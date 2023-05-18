@@ -412,7 +412,9 @@ div ul li {
 .projbtn {
   width: 327px;
   z-index: 1;
-  margin-top: -35px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 #myworks-btn {
@@ -1081,12 +1083,21 @@ footer {
 
   .project-card:hover,
   .project-card:focus {
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease;
   }
 
-  .project-card:hover.projbtn {
+  .project-card:hover .projecttitle,
+  .project-card:hover .projectdetails,
+  .project-card:hover .projectflex2,
+  .project-card:focus .projecttitle,
+  .project-card:focus .projectdetails,
+  .project-card:focus .projectflex2 {
+    opacity: 0;
+  }
+
+  .project-card:hover .projbtn {
     display: block;
+    z-index: 2;
   }
 
   #proj2:hover {
