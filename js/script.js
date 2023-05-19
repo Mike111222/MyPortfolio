@@ -89,7 +89,7 @@ const myProjects = [
     seeProject: 'See Project',
     linkLive: 'https://Mike111222.github.io/MyPortfolio/',
     linkSource: 'https://github.com/Mike111222/MyPortfolio/',
-  }
+  },
 ];
 
 const projectsContainer = document.getElementById('projects-container');
@@ -149,50 +149,49 @@ myProjects.map((card) => {
       </div>
     </div>
   
-`;    
+`;
   return ('');
 });
 
-
 // Get the modal
 
-const modal = document.getElementById("myModal");
-const span = document.getElementsByClassName("close")[0];
+const modal = document.getElementById('myModal');
+const span = document.getElementsByClassName('close')[0];
 span.onclick = function () {
-  console.log('clicked')
+  console.log('clicked');
   modal.style.display = 'none';
-}
+};
 // Get the button that opens the modal
-const proBtn = document.getElementsByClassName("projbtn");
+const proBtn = document.getElementsByClassName('projbtn');
 console.log(proBtn);
-Array.from(proBtn).forEach(button => {
-  button.addEventListener("click", () => {
+Array.from(proBtn).forEach((button) => {
+  button.addEventListener('click', () => {
     // Perform desired action here
     document.body.classList.toggle('no-scroll');
     modal.style.display = 'block';
-    
-    console.log("Button clicked!");
+
+    console.log('Button clicked!');
   });
 });
 const modalClose = document.querySelector('.close');
-    modalClose.addEventListener('click', () => {
-      modal.classList.remove('act');
-      document.body.classList.remove('no-scroll');
-    });
+modalClose.addEventListener('click', () => {
+  modal.classList.remove('act');
+  document.body.classList.remove('no-scroll');
+});
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+window.onclick = function (event) {
+  if (event.target === modal) {
+    modal.style.display = 'none';
   }
 };
-  
 
 // const allProjects = [
 //   {
 //     id: 'myworks',
 //     name: 'My Recent Works',
-//     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+//     description: 'A daily selection of privately
+//     personalized reads; no accounts or sign-ups required.',
 //     featuredImage: '.images/myworks-desktop.png',
 //     technologies: ['HTML', 'BootStrap', 'Ruby'],
 //     linkLive: '<a href="https://Mike111222.github.io/MyPortfolio/" target="blank">See Live</a>',
@@ -201,7 +200,8 @@ window.onclick = function(event) {
 //   {
 //     id: 'proj1',
 //     name: 'Professional Art Printing Data',
-//     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
+//     description: 'A daily selection of privately personalized reads;
+//      no accounts or sign-ups required. Has been the industry standards.',
 //     featuredImage: './images/Img Placeholder-2',
 //     technologies: ['HTML', 'CSS', 'BootStrap'],
 //     seeProject: 'See Project',
@@ -211,7 +211,8 @@ window.onclick = function(event) {
 //   {
 //     id: 'proj2',
 //     name: 'Professional Art Printing Data',
-//     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
+//     description: 'A daily selection of privately personalized reads;
+//     no accounts or sign-ups required. Has been the industry standards.',
 //     featuredImage: './images/Img Placeholder-2',
 //     technologies: ['HTML', 'CSS', 'BootStrap'],
 //     seeProject: 'See Project',
@@ -221,7 +222,8 @@ window.onclick = function(event) {
 //   {
 //     id: 'proj3',
 //     name: 'Professional Art Printing Data',
-//     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
+//     description: 'A daily selection of privately personalized reads;
+//     no accounts or sign-ups required. Has been the industry standards.',
 //     featuredImage: './images/Img Placeholder-2',
 //     technologies: ['HTML', 'CSS', 'BootStrap'],
 //     seeProject: 'See Project',
@@ -231,7 +233,8 @@ window.onclick = function(event) {
 //   {
 //     id: 'proj4',
 //     name: 'Professional Art Printing Data',
-//     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
+//     description: 'A daily selection of privately personalized reads;
+//     no accounts or sign-ups required. Has been the industry standards.',
 //     featuredImage: './images/Img Placeholder-2',
 //     technologies: ['HTML', 'CSS', 'BootStrap'],
 //     seeProject: 'See Project',
@@ -241,7 +244,8 @@ window.onclick = function(event) {
 //   {
 //     id: 'proj5',
 //     name: 'Professional Art Printing Data',
-//     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
+//     description: 'A daily selection of privately personalized reads;
+//     no accounts or sign-ups required. Has been the industry standards.',
 //     featuredImage: './images/Img Placeholder-2',
 //     technologies: ['HTML', 'CSS', 'BootStrap'],
 //     seeProject: 'See Project',
@@ -251,7 +255,8 @@ window.onclick = function(event) {
 //   {
 //     id: 'proj6',
 //     name: 'Professional Art Printing Data',
-//     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
+//     description: 'A daily selection of privately personalized reads;
+//     no accounts or sign-ups required. Has been the industry standards.',
 //     featuredImage: './images/Img Placeholder-2',
 //     technologies: ['HTML', 'CSS', 'BootStrap'],
 //     seeProject: 'See Project',
