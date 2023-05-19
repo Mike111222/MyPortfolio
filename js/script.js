@@ -158,7 +158,6 @@ myProjects.map((card) => {
 const modal = document.getElementById('myModal');
 const span = document.getElementsByClassName('close')[0];
 span.onclick = function () {
-  
   modal.style.display = 'none';
 };
 // Get the button that opens the modal
@@ -170,7 +169,6 @@ Array.from(proBtn).forEach((button) => {
     document.body.classList.toggle('no-scroll');
     modal.style.display = 'block';
 
-    console.log('Button clicked!');
   });
 });
 const modalClose = document.querySelector('.close');
