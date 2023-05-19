@@ -218,3 +218,34 @@ const form = document.getElementById('myform');
 form.addEventListener('submit', validate);
 
 //* **end of form validation code***
+
+//* **preserve data in browser local storage ***
+
+// Declaring form elements i-e name, email, textarea
+const fullNameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const textInput = document.querySelector('#textarea');
+
+// Load the data from local storage, if it already exists in the local storage
+const savedData = JSON.parse(localStorage.getItem('myFormData'));
+
+if (savedData) { // if statement to compare the saved data
+  fullNameInput.value = savedData.name;
+  emailInput.value = savedData.email;
+  textInput.value = savedData.message;
+}
+// saveFormData function having object myFormData with input key values
+function saveFormData() {
+  const myFormData = {
+    name: fullNameInput.value,
+    email: emailInput.value,
+    text: textInput.value,
+  };
+
+  // Save the data to local storage as a single entry to avoid repitition
+  localStorage.setItem('myFormData', JSON.stringify(myFormData));
+}
+// adding eventListeners to the form input elements
+fullNameInput.addEventListener('input', saveFormData);
+emailInput.addEventListener('input', saveFormData);
+textInput.addEventListener('input', saveFormData);
