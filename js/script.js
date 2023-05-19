@@ -92,6 +92,8 @@ const myProjects = [
   },
 ];
 
+//for loading projects on run time through JavaScript...Project Card Mapping
+
 const projectsContainer = document.getElementById('projects-container');
 
 myProjects.map((card) => {
@@ -182,3 +184,39 @@ window.onclick = (event) => {
     modal.style.display = 'none';
   }
 };
+
+
+// ***the contact form validation***
+
+
+//Step-1 Check the letter case of the string is lower case, if yes, return true,
+//if no, return false
+const checkCase = (str) => {
+  const isLower = str.toString().toLowerCase();
+  if (str === isLower) {
+    return true;
+  }
+  return false;
+};
+
+//Step-2 validate the email, prevent the default event submit,
+//take the input value of email, if email value is in lowercase, return true,
+//form will be submitted using formspree service
+//else return false
+const validate = (email) => {
+  email.preventDefault();
+  const inputMail = document.getElementById('email').value;
+  const form = document.getElementById('myform');
+  const checkEmail = checkCase(inputMail);
+  if (checkEmail === true) {
+    form.action = 'https://formspree.io/f/xbjewoor';
+    form.submit();
+  } else {      //else return false and throw an error message for the user
+    const throwError = document.getElementById('error-msg');
+    throwError.innerHTML = 'Please check your email address again. The email input should always be in the lower case.';
+  }
+};
+const form = document.getElementById('myform');
+form.addEventListener('submit', validate);
+
+//***end of form validation code***
