@@ -27,10 +27,10 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+ 
   <br/>
 
-  <h3><b>Portfolio Mobile First Project-1</b></h3>
+  <h3><b>Mike's Portfolio</b></h3>
 
 </div>
 
@@ -60,15 +60,16 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Portfolio Mobile First Project-1] <a name="about-project"></a>
+# 📖 [My Portfolio] <a name="about-project"></a>
 
 
-**[Portfolio Mobile First Project-1]** is the first milestone to get new Micronauts onboard with Figma, Own Responsive Website, Git, GitHub and Linters.
+**[My Portfolio]** is the first milestone to get new Micronauts onboard with Figma, Own Responsive Website, Git, GitHub and Linters.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 1- HTML
 2- CSS
+3-JavaScript
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -78,6 +79,7 @@ After you're finished please remove all the comments and instructions!
   <ul>
     <li><a href="https://html.com/">HTML</a></li>
     <li><a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS</a></li>
+    <li><a href="https://www.javascript.com/">JavaScript</a></li>
     
   </ul>
 </details>
@@ -90,6 +92,7 @@ After you're finished please remove all the comments and instructions!
 
 - Added index.html file
 - Added styles.css file
+- Added script.js file
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -140,7 +143,7 @@ Coming soon
 
 ### Usage
 
-Open index.html file in VS Code, run via live server extension and see how the code works. You can also visit the Online Demo Link.
+Open index.html file in VS Code, run via live server extension and see how the code works. You can also visit the Live Demo Link to see how the Portfolio works online.
 
 ### Run tests
 

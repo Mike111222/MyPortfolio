@@ -185,6 +185,8 @@ window.onclick = (event) => {
   }
 };
 
+//* **end of modal***
+
 // ***the contact form validation***
 
 // Step-1 Check the letter case of the string is lower case, if yes, return true,
@@ -218,3 +220,52 @@ const form = document.getElementById('myform');
 form.addEventListener('submit', validate);
 
 //* **end of form validation code***
+
+//* **preserve data in browser local storage ***
+
+/**
+ * Declaring form elements i-e name, email, textarea
+ * The form elements (fullNameInput, emailInput, and textInput)
+ * are declared by selecting the corresponding HTML elements using document.querySelector().
+*/
+const fullNameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const textInput = document.querySelector('#textarea');
+
+// Load the data from local storage, if it already exists in the local storage
+const savedData = JSON.parse(localStorage.getItem('myFormData'));
+
+/**
+ * An if statement checks if there is any saved data (savedData). If data exists,
+ * it populates the form fields (fullNameInput, emailInput, and textInput) with the saved values.
+*/
+
+if (savedData) {
+  fullNameInput.value = savedData.name;
+  emailInput.value = savedData.email;
+  textInput.value = savedData.message;
+}
+/**
+ * The saveFormData() function is defined to capture changes in the
+ *  form input fields. Inside the function, a JavaScript object (myFormData)
+ *  is created with the current values of the input fields.
+ */
+function saveFormData() {
+  const myFormData = {
+    name: fullNameInput.value,
+    email: emailInput.value,
+    text: textInput.value,
+  };
+
+  /**
+  * The myFormData object is then saved to local storage as a single entry
+  *  using localStorage.setItem('myFormData', JSON.stringify(myFormData)).
+  * The object is converted to a JSON string using JSON.stringify() before storing it.
+ */
+
+  localStorage.setItem('myFormData', JSON.stringify(myFormData));
+}
+// adding eventListeners to the form input elements
+fullNameInput.addEventListener('input', saveFormData);
+emailInput.addEventListener('input', saveFormData);
+textInput.addEventListener('input', saveFormData);
