@@ -158,7 +158,7 @@ myProjects.map((card) => {
 const modal = document.getElementById('myModal');
 const span = document.getElementsByClassName('close')[0];
 span.onclick = function () {
-  console.log('clicked');
+  
   modal.style.display = 'none';
 };
 // Get the button that opens the modal
