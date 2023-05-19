@@ -110,6 +110,11 @@ ul li a {
   padding: 10px;
 }
 
+.modal-btns a {
+  cursor: pointer;
+  padding: 3px;
+}
+
 .nav-menu.active li > a {
   color: #fff5e1;
   font-family: "Inter", sans-serif;
@@ -162,7 +167,7 @@ ul li a {
   position: relative;
   background-image: url(../images/Illustration.png);
   background-repeat: no-repeat;
-  background-position: absolute;
+  background-position: bottom;
   background-position-x: right;
   background-position-y: bottom;
 }
@@ -414,7 +419,7 @@ div ul li {
   z-index: 1;
   position: absolute;
   bottom: 0;
-  right: 0;
+  left: 0;
 }
 
 #myworks-btn {
@@ -427,6 +432,7 @@ div ul li {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 63px 24px;
   gap: 12px;
   align-content: center;
@@ -503,6 +509,116 @@ div ul li {
   padding: 63px 24px;
   gap: 12px;
   align-content: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 3%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+}
+
+.modal * {
+  color: black;
+}
+
+/* The Close Button */
+.close {
+  color: #686060;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+/* Modal Header */
+.modal-header {
+  padding: 12px 24px;
+  font-family: 'Crete Round', sans-serif;
+  color: #172b4d;
+}
+
+.modal-header h2 {
+  margin-bottom: 40px;
+}
+
+/* Modal Body */
+.modal-body {
+  padding: 24px 24px 27px 24px;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.modal-body p {
+  color: #344563;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.modal-img {
+  width: 100%;
+  height: 240px;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+.btns-div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 4px;
+  width: 100%;
+  margin-left: -15px;
+}
+
+.hide {
+  display: none;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 /* about me styles */
@@ -808,6 +924,126 @@ footer {
     font-size: 20px;
   }
 
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 3%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+  }
+
+  .no-scroll {
+    overflow: hidden;
+  }
+
+  .modal * {
+    color: black;
+  }
+
+  /* The Close Button */
+  .close {
+    color: #686060;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(1.5);
+  }
+
+  /* Modal Header */
+  .modal-header {
+    padding: 12px 24px;
+    font-family: 'Crete Round', sans-serif;
+    color: #172b4d;
+  }
+
+  .modal-header h2 {
+    margin-bottom: 12px;
+  }
+
+  /* Modal Body */
+  .modal-body {
+    padding: 24px 24px 27px 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .modal-body p {
+    color: #344563;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .hide {
+    display: block;
+  }
+
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+
+  .modal-btns a {
+    cursor: pointer;
+    padding: 3px;
+  }
+
+  .modal-img {
+    width: 33rem;
+    height: 22rem;
+  }
+
+  .btns-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-left: 2px;
+    margin-top: 27px;
+    gap: 15px;
+  }
+
+  /* Add Animation */
+  @keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+
   .mybiopage {
     display: flex;
     flex-direction: row-reverse;
@@ -936,7 +1172,7 @@ footer {
     font-size: 72px;
     font-weight: 300;
     line-height: 82px;
-    letter-spacing: 2;
+    letter-spacing: 2px;
     text-align: left;
     width: 566px;
     height: 78px;
@@ -970,8 +1206,21 @@ footer {
 
   .project-card:hover,
   .project-card:focus {
+    transition: all 0.3s ease;
+  }
+
+  .project-card:hover .projecttitle,
+  .project-card:hover .projectdetails,
+  .project-card:hover .projectflex2,
+  .project-card:focus .projecttitle,
+  .project-card:focus .projectdetails,
+  .project-card:focus .projectflex2 {
     opacity: 0;
-    transition: all 0.3s ease-in-out;
+  }
+
+  .project-card:hover .projbtn {
+    display: block;
+    z-index: 2;
   }
 
   #proj2:hover {
@@ -984,16 +1233,19 @@ footer {
     cursor: pointer;
   }
 
-  #proj1:hover > .projbtn {
-    display: block;
+  #proj4:hover {
+    background-image: url(../images/desktop\ project-1.png);
+    cursor: pointer;
   }
 
-  #proj2:hover > .projbtn {
-    display: block;
+  #proj5:hover {
+    background-image: url(../images/desktop\ project-2.png);
+    cursor: pointer;
   }
 
-  #proj3:hover > .projbtn {
-    display: block;
+  #proj6:hover {
+    background-image: url(../images/desktop-project-3.png);
+    cursor: pointer;
   }
 
   .aboutme-card {
