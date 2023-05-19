@@ -221,13 +221,22 @@ form.addEventListener('submit', validate);
 
 //* **preserve data in browser local storage ***
 
-// Declaring form elements i-e name, email, textarea
+/**
+ * Declaring form elements i-e name, email, textarea
+ * The form elements (fullNameInput, emailInput, and textInput) 
+ * are declared by selecting the corresponding HTML elements using document.querySelector().
+*/
 const fullNameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
 const textInput = document.querySelector('#textarea');
 
 // Load the data from local storage, if it already exists in the local storage
 const savedData = JSON.parse(localStorage.getItem('myFormData'));
+
+/**
+ * An if statement checks if there is any saved data (savedData). If data exists, 
+ * it populates the form fields (fullNameInput, emailInput, and textInput) with the saved values.
+*/
 
 if (savedData) { // if statement to compare the saved data
   fullNameInput.value = savedData.name;
