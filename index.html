@@ -116,7 +116,7 @@
     <section id="projects-container" class="projects-section">
     </section>
     <div id="myModal" class="myModal">
-      </div>
+    </div>
     <section id="about-me">
       <div class="aboutme-card">
         <div>
@@ -187,18 +187,13 @@
       </div>
       <div class="container-form">
         <form id="myform" action="https://formspree.io/f/xbjewoor" method="post">
-          <input name="full-name" class="input myborder on-mobile" type="text" required placeholder="Full name"
-            maxlength="30">
-          <div class="firstlast-name">
-            <input name="first-name" class="input form-input myborder on-desktop" type="text" required
-              placeholder="First name" maxlength="20">
-            <input name="last-name" class="input form-input myborder on-desktop" type="text" required
-              placeholder="Last name" maxlength="20">
-          </div>
-          <input name="email" class="input myborder" type="email" required placeholder="Email address">
+          <input name="full-name" class="input myborder" type="text" required placeholder="Full name" maxlength="30">
+
+          <input name="email" id="email" class="input myborder" type="email" required placeholder="Email address">
           <textarea name="textarea" type="text" class="input" id="textarea" cols="32" rows="6" required
             placeholder="Hey Mike, I would like to get in touch with you." maxlength="500"></textarea>
-          <div class="centerbtn">
+          <div class="centerbtn validation-box">
+            <small id="error-msg"></small>
             <button id="gettouch-btn" name="getintouch-btn" type="submit" class="work-btn">Get in
               touch</button>
           </div>
