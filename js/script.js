@@ -226,6 +226,8 @@ form.addEventListener('submit', validate);
  * The form elements (fullNameInput, emailInput, and textInput) 
  * are declared by selecting the corresponding HTML elements using document.querySelector().
 */
+
+const myFisrtName = document.querySelector('#firstName');
 const fullNameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
 const textInput = document.querySelector('#textarea');
