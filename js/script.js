@@ -185,6 +185,8 @@ window.onclick = (event) => {
   }
 };
 
+//* **end of modal***
+
 // ***the contact form validation***
 
 // Step-1 Check the letter case of the string is lower case, if yes, return true,
@@ -223,11 +225,9 @@ form.addEventListener('submit', validate);
 
 /**
  * Declaring form elements i-e name, email, textarea
- * The form elements (fullNameInput, emailInput, and textInput) 
+ * The form elements (fullNameInput, emailInput, and textInput)
  * are declared by selecting the corresponding HTML elements using document.querySelector().
 */
-
-const myFisrtName = document.querySelector('#firstName');
 const fullNameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
 const textInput = document.querySelector('#textarea');
@@ -236,16 +236,20 @@ const textInput = document.querySelector('#textarea');
 const savedData = JSON.parse(localStorage.getItem('myFormData'));
 
 /**
- * An if statement checks if there is any saved data (savedData). If data exists, 
+ * An if statement checks if there is any saved data (savedData). If data exists,
  * it populates the form fields (fullNameInput, emailInput, and textInput) with the saved values.
 */
 
-if (savedData) { // if statement to compare the saved data
+if (savedData) {
   fullNameInput.value = savedData.name;
   emailInput.value = savedData.email;
   textInput.value = savedData.message;
 }
-// saveFormData function having object myFormData with input key values
+/**
+ * The saveFormData() function is defined to capture changes in the
+ *  form input fields. Inside the function, a JavaScript object (myFormData)
+ *  is created with the current values of the input fields.
+ */
 function saveFormData() {
   const myFormData = {
     name: fullNameInput.value,
@@ -253,7 +257,12 @@ function saveFormData() {
     text: textInput.value,
   };
 
-  // Save the data to local storage as a single entry to avoid repitition
+  /**
+  * The myFormData object is then saved to local storage as a single entry
+  *  using localStorage.setItem('myFormData', JSON.stringify(myFormData)).
+  * The object is converted to a JSON string using JSON.stringify() before storing it.
+ */
+
   localStorage.setItem('myFormData', JSON.stringify(myFormData));
 }
 // adding eventListeners to the form input elements
