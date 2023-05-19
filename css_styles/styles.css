@@ -167,7 +167,7 @@ ul li a {
   position: relative;
   background-image: url(../images/Illustration.png);
   background-repeat: no-repeat;
-  background-position: absolute;
+  background-position: bottom;
   background-position-x: right;
   background-position-y: bottom;
 }
@@ -591,7 +591,7 @@ div ul li {
   width: 80%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   animation-name: animatetop;
-  animation-duration: all 0.4s;
+  animation-duration: 0.4s;
 }
 
 .btns-div {
@@ -999,7 +999,7 @@ footer {
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     animation-name: animatetop;
-    animation-duration: all 0.4s;
+    animation-duration: 0.4s;
   }
 
   .modal-btns a {
@@ -1148,7 +1148,7 @@ footer {
     font-size: 72px;
     font-weight: 300;
     line-height: 82px;
-    letter-spacing: 2;
+    letter-spacing: 2px;
     text-align: left;
     width: 566px;
     height: 78px;
