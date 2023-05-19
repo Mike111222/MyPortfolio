@@ -971,12 +971,18 @@ footer {
     color: #172b4d;
   }
 
+  .modal-header h2 {
+    margin-bottom: 12px;
+  }
+
   /* Modal Body */
   .modal-body {
     padding: 24px 24px 27px 24px;
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
   }
 
   .modal-body p {
@@ -987,6 +993,10 @@ footer {
     font-size: 16px;
     line-height: 30px;
     margin-bottom: 20px;
+  }
+
+  .hide {
+    display: block;
   }
 
   /* Modal Content */
@@ -1005,6 +1015,20 @@ footer {
   .modal-btns a {
     cursor: pointer;
     padding: 3px;
+  }
+
+  .modal-img {
+    width: 33rem;
+    height: 22rem;
+  }
+
+  .btns-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-left: 2px;
+    margin-top: 27px;
+    gap: 15px;
   }
 
   /* Add Animation */
