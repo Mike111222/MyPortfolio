@@ -163,7 +163,7 @@ span.onclick = function () {
 };
 // Get the button that opens the modal
 const proBtn = document.getElementsByClassName('projbtn');
-console.log(proBtn);
+
 Array.from(proBtn).forEach((button) => {
   button.addEventListener('click', () => {
     // Perform desired action here
