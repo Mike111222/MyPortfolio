@@ -1005,6 +1005,8 @@ footer {
     font-size: 16px;
     line-height: 30px;
     margin-bottom: 20px;
+    width: 100%;
+    height: auto;
   }
 
   .hide {
@@ -1157,6 +1159,7 @@ footer {
 
   .div-myworks {
     height: auto;
+    width: 100%;
   }
 
   #myworks-btn {
@@ -1339,6 +1342,7 @@ footer {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
   }
 
   .firstlast-name {
