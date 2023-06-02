@@ -598,10 +598,10 @@ div ul li {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
   gap: 4px;
   width: 100%;
-  margin-left: -15px;
+  height: auto;
 }
 
 .hide {
