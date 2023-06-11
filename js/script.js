@@ -32,13 +32,13 @@ window.onscroll = myFunction();
 const myProjects = [
   {
     id: 'proj1',
-    name: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
-    featuredImage: './images/Img Placeholder-2',
+    name: 'KingFisher Chemicals',
+    description: 'A joyful celebration believing in the openness and sharing, believing in "Food is the New Gold" creating a positive change with people from over 100 countries is taking place in November, Pakistan',
+    featuredImage: './images/KingFisherChemicals.jpg',
     technologies: ['HTML', 'Ruby', 'BootStrap'],
     seeProject: 'See Project',
-    linkLive: 'https://Mike111222.github.io/MyPortfolio/',
-    linkSource: 'https://github.com/Mike111222/MyPortfolio/',
+    linkLive: 'https://Mike111222.github.io/KingFisher-Chemicals/',
+    linkSource: 'https://github.com/Mike111222/KingFisher-Chemicals/',
   },
   {
     id: 'proj2',
@@ -127,12 +127,10 @@ myProjects.map((card) => {
           </div>
         </div>
         <div class="modal-body">
-          <div><img src="./images/popup-desktop.png" class="modal-img"alt="project image"></div>
+          <div><img src="./images/KingFisherChemicals.jpg" class="modal-img"alt="project image"></div>
           <div>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-              when an unknown printer took a galley of type and scrambled it 1960s.
+            A joyful celebration believing in the openness and sharing, believing in "Food is the New Gold" creating a positive change with people from over 100 countries is taking place in November, Pakistan
             </p><br>
             <p class="hide">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
