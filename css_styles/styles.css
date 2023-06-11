@@ -1043,6 +1043,7 @@ footer {
     margin-left: 2px;
     margin-top: 27px;
     gap: 15px;
+    width: 100%;
   }
 
   /* Add Animation */
@@ -1131,6 +1132,7 @@ footer {
   #myworks {
     background-color: #fff;
     padding-left: 141px;
+    width: 100%;
   }
 
   .myworks {
