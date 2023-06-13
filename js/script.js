@@ -1,3 +1,4 @@
+// hamburger menu
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -13,182 +14,227 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   document.body.classList.remove('no-scroll');
 }));
 
-// Get the header
-const header = document.getElementById('myheader');
+// All Projects Array of Objects
 
-// Get the offset position of the navbar
-const sticky = header.offsetTop;
-
-// Add the sticky class to the header Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add('sticky');
-  } else {
-    header.classList.remove('sticky');
-  }
-}
-window.onscroll = myFunction();
-
-const myProjects = [
+const projects = [
   {
-    id: 'proj1',
-    name: 'KingFisher Chemicals',
-    description: 'A joyful celebration believing in the openness and sharing, believing in "Food is the New Gold" creating a positive change with people from over 100 countries is taking place in November, Pakistan',
-    featuredImage: './images/KingFisherChemicals.jpg',
-    technologies: ['HTML', 'Ruby', 'BootStrap'],
+    id: 'bg-pro1',
+    name: 'Awesome Books',
+    description: 'In this project you can add new books and remove existing books, it looks like a library. Users can update the list of favorite books. It is a Single Page Application',
+    featuredImage: './img/awesomebooks.JPG',
+    technologies: ['HTML', 'JavaScript', 'CSS'],
     seeProject: 'See Project',
-    linkLive: 'https://Mike111222.github.io/KingFisher-Chemicals/',
-    linkSource: 'https://github.com/Mike111222/KingFisher-Chemicals/',
+    linkLive: '<a href="https://Mike111222.github.io/Awesome-BooksES6/" target="blank">See Live</a>',
+    linkSource: '<a href="https://github.com/Mike111222/Awesome-BooksES6" target="blank">See Source</a>',
   },
   {
-    id: 'proj2',
-    name: 'Professional Art Printing Data',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
-    featuredImage: './images/Img Placeholder-2',
-    technologies: ['HTML', 'Ruby', 'BootStrap'],
+    id: 'bg-pro2',
+    name: 'To Do List',
+    description: 'You can add your daily tasks list here and tick every task acording to its completion. You can also remove and edit tasks. You can also clear all completed tasks after selecting them from the list.',
+    featuredImage: './img/to_do_list.JPG',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
     seeProject: 'See Project',
-    linkLive: 'https://Mike111222.github.io/MyPortfolio/',
-    linkSource: 'https://github.com/Mike111222/MyPortfolio/',
+    linkLive: '<a href="https://Mike111222.github.io/ToDoList/dist" target="blank">See Live</a>',
+    linkSource: '<a href="https://github.com/Mike111222/ToDoList" target="blank">See Source</a>',
   },
   {
-    id: 'proj3',
+    id: 'bg-pro3',
     name: 'Professional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
-    featuredImage: './images/Img Placeholder-2',
+    featuredImage: './img/Img Placeholder1-2.svg',
     technologies: ['HTML', 'Ruby', 'BootStrap'],
     seeProject: 'See Project',
-    linkLive: 'https://Mike111222.github.io/MyPortfolio/',
-    linkSource: 'https://github.com/Mike111222/MyPortfolio/',
+    linkLive: '<a href="https://Mike111222.github.io/MyPortfolio/" target="blank">See Live</a>',
+    linkSource: '<a href="https://github.com/Mike111222/MyPortfolio" target="blank">See Source</a>',
   },
   {
-    id: 'proj4',
+    id: 'bg-pro4',
     name: 'Professional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
-    featuredImage: './images/Img Placeholder-2',
+    featuredImage: './img/Img Placeholder1-2.svg',
     technologies: ['HTML', 'Ruby', 'BootStrap'],
     seeProject: 'See Project',
-    linkLive: 'https://Mike111222.github.io/MyPortfolio/',
-    linkSource: 'https://github.com/Mike111222/MyPortfolio/',
+    linkLive: '<a href="https://Mike111222.github.io/MyPortfolio/" target="blank">See Live</a>',
+    linkSource: '<a href="https://github.com/Mike111222/MyPortfolio" target="blank">See Source</a>',
   },
   {
-    id: 'proj5',
+    id: 'bg-pro5',
     name: 'Professional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
-    featuredImage: './images/Img Placeholder-2',
+    featuredImage: './img/Img Placeholder1-2.svg',
     technologies: ['HTML', 'Ruby', 'BootStrap'],
     seeProject: 'See Project',
-    linkLive: 'https://Mike111222.github.io/MyPortfolio/',
-    linkSource: 'https://github.com/Mike111222/MyPortfolio/',
+    linkLive: '<a href="https://Mike111222.github.io/MyPortfolio/" target="blank">See Live</a>',
+    linkSource: '<a href="https://github.com/Mike111222/MyPortfolio" target="blank">See Source</a>',
   },
   {
-    id: 'proj6',
+    id: 'bg-pro6',
     name: 'Professional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
-    featuredImage: './images/Img Placeholder-2',
+    featuredImage: './img/Img Placeholder1-2.svg',
     technologies: ['HTML', 'Ruby', 'BootStrap'],
     seeProject: 'See Project',
-    linkLive: 'https://Mike111222.github.io/MyPortfolio/',
-    linkSource: 'https://github.com/Mike111222/MyPortfolio/',
+    linkLive: '<a href="https://Mike111222.github.io/MyPortfolio/" target="blank">See Live</a>',
+    linkSource: '<a href="https://github.com/Mike111222/MyPortfolio" target="blank">See Source</a>',
   },
 ];
 
-// for loading projects on run time through JavaScript...Project Card Mapping
+// Project Card Mapping
 
 const projectsContainer = document.getElementById('projects-container');
 
-myProjects.map((card) => {
+projects.map((card) => {
   projectsContainer.innerHTML += `
-    <div id="${card.id}" class="project-card">
-      <h2 class="work-subheading projecttitle">${card.name}</h2>
-      <p class="work-specs projectdetails">${card.description}</p>
-      <div class="for-flex projectflex2">
-        <ul>
-          <li class="flex-items item1">${card.technologies[0]}</li>
-          <li class="flex-items item2">${card.technologies[1]}</li>
-          <li class="flex-items item3">${card.technologies[2]}</li>
-        </ul>
-      </div>
-      <button type="button" id="myBtn" class="work-btn projbtn on-mobile">${card.seeProject}</button>
-    </div>
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <span class="close">&times;</span>
-          <h2>${card.name}</h2>
-          <div class="for-flex projectflex2">
-            <ul>
-              <li class="flex-items item1">${card.technologies[0]}</li>
-              <li class="flex-items item2">${card.technologies[1]}</li>
-              <li class="flex-items item3">${card.technologies[2]}</li>
-            </ul>
-          </div>
-        </div>
-        <div class="modal-body">
-          <div><img src="./images/KingFisherChemicals.jpg" class="modal-img"alt="project image"></div>
-          <div>
-            <p>
-            A joyful celebration believing in the openness and sharing, believing in "Food is the New Gold" creating a positive change with people from over 100 countries is taking place in November, Pakistan
-            </p><br>
-            <p class="hide">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-              when an unknown printer took a galley of type and scrambled it 1960s with the 
-              releax map lapora verita.
+  <div id="${card.id}" class="project-card">
+          <div class="card-text flex flex-column">
+            <h2 class="work-subtitle protitle">
+            ${card.name}
+            </h2>
+            <p class="work-details prodetails">${card.description}
             </p>
-            <div class="btns-div">
-            <a href="${card.linkLive}"><img src="./images/See Live.png" class="img-btn" alt="Live Link"></a>
-            <a href="${card.linkSource}"><img src="./images/See Source.png" class="img-btn" alt="source code"></a>
-      
-  
-      </div>
+            <div class="flex">
+              <p class="flex-item item2 proitem2">${card.technologies[0]}</p>
+              <p class="flex-item item3 proitem3">${card.technologies[1]}</p>
+              <p class="flex-item item1 proitem1">${card.technologies[2]}</p>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  
-`;
+          <button class="work-button probutton ">
+          ${card.seeProject}
+          </button>
+  </div>
+  `;
   return ('');
 });
 
-// Get the modal
+// All projects Array to show in Popup including Recent Works
 
-const modal = document.getElementById('myModal');
-const span = document.getElementsByClassName('close')[0];
-span.onclick = () => {
-  modal.style.display = 'none';
-};
-// Get the button that opens the modal
-const proBtn = document.getElementsByClassName('projbtn');
+const allProjects = [
+  {
+    id: 'projects',
+    name: 'KingFisher Chemicals',
+    description: 'This project belongs to inform farmers, agnomists, people and activists around the globe about a meeting, emphacizing the slogan, "Food is the New Gold". It also gives details about the program, featured speakers, venue and dates.',
+    featuredImage: './img/KingFisherChemicals.JPG',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    seeProject: 'See Project',
+    linkLive: '<a href="https://Mike111222.github.io/KingFisher-Chemicals/" target="blank">See Live</a>',
+    linkSource: '<a href="https://github.com/Mike111222/KingFisher-Chemicals" target="blank">See Source</a>',
+  },
+  {
+    id: 'bg-pro1',
+    name: 'Awesome Books',
+    description: 'In this project you can add new books and remove existing books, it looks like a library. Users can update the list of favorite books. It is a Single Page Application',
+    featuredImage: './img/awesomebooks.JPG',
+    technologies: ['HTML', 'JavaScript', 'CSS'],
+    seeProject: 'See Project',
+    linkLive: '<a href="https://Mike111222.github.io/Awesome-BooksES6/" target="blank">See Live</a>',
+    linkSource: '<a href="https://github.com/Mike111222/Awesome-BooksES6" target="blank">See Source</a>',
+  },
+  {
+    id: 'bg-pro2',
+    name: 'To Do List',
+    description: 'You can add your daily tasks list here and tick every task acording to its completion. You can also remove and edit tasks. You can also clear all completed tasks after selecting them from the list.',
+    featuredImage: './img/to_do_list.JPG',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    seeProject: 'See Project',
+    linkLive: '<a href="https://Mike111222.github.io/ToDoList/dist" target="blank">See Live</a>',
+    linkSource: '<a href="https://github.com/Mike111222/ToDoList" target="blank">See Source</a>',
+  },
+  {
+    id: 'bg-pro3',
+    name: 'Professional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
+    featuredImage: './img/Img Placeholder1-2.svg',
+    technologies: ['HTML', 'Ruby', 'BootStrap'],
+    seeProject: 'See Project',
+    linkLive: '<a href="https://Mike111222.github.io/MyPortfolio/" target="blank">See Live</a>',
+    linkSource: '<a href="https://github.com/Mike111222/MyPortfolio" target="blank">See Source</a>',
+  },
+  {
+    id: 'bg-pro4',
+    name: 'Professional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
+    featuredImage: './img/Img Placeholder1-3.svg',
+    technologies: ['HTML', 'Ruby', 'BootStrap'],
+    seeProject: 'See Project',
+    linkLive: '<a href="https://Mike111222.github.io/MyPortfolio/" target="blank">See Live</a>',
+    linkSource: '<a href="https://github.com/Mike111222/MyPortfolio" target="blank">See Source</a>',
+  },
+  {
+    id: 'bg-pro5',
+    name: 'Professional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
+    featuredImage: './img/Img Placeholder1-4.svg',
+    technologies: ['HTML', 'Ruby', 'BootStrap'],
+    seeProject: 'See Project',
+    linkLive: '<a href="https://Mike111222.github.io/MyPortfolio/" target="blank">See Live</a>',
+    linkSource: '<a href="https://github.com/Mike111222/MyPortfolio" target="blank">See Source</a>',
+  },
+  {
+    id: 'bg-pro6',
+    name: 'Professional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standards.',
+    featuredImage: './img/Img Placeholder1-5.svg',
+    technologies: ['HTML', 'Ruby', 'BootStrap'],
+    seeProject: 'See Project',
+    linkLive: '<a href="https://Mike111222.github.io/MyPortfolio/" target="blank">See Live</a>',
+    linkSource: '<a href="https://github.com/Mike111222/MyPortfolio" target="blank">See Source</a>',
+  },
+];
+// pop-up section
+const seeProject = document.querySelectorAll('.work-button');
+const popMenu = document.querySelector('.seePopup');
 
-Array.from(proBtn).forEach((button) => {
-  button.addEventListener('click', () => {
-    // Perform desired action here
+seeProject.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
     document.body.classList.toggle('no-scroll');
-    modal.style.display = 'block';
+    popMenu.classList.add('act');
+    popMenu.innerHTML = `    
+    <section id="popup" class="popup">
+        <div id="popup-title">
+          <h3 class="popup-heading flex">${allProjects[index].name}<h3>
+            <span class="close-btn">&#x2715;</span>
+            <div class="flex
+            flex-start">
+              <p class="flex-item">${allProjects[index].technologies[0]}
+              </p>
+              <p class="flex-item">${allProjects[index].technologies[1]}
+              </p>
+              <p class="flex-item">${allProjects[index].technologies[2]}
+              </p>
+          </div>
+        </div>
+          <div class="popup-card">
+             <div id="popup-image"><img src="${allProjects[index].featuredImage}" alt="something here">
+              </div>
+              <div class="flex flex-column">
+                <p class="popup-details">
+                ${allProjects[index].description}
+                </p>
+                <div class="flex popup-textbtn">
+                  <button id= "see-live" 
+                  class="work-button">${allProjects[index].linkLive}
+                  <img src="./img/live.png" alt="live icon">
+                  </button>
+                  <button id= "see-source" 
+                  class="work-button">
+                  ${allProjects[index].linkSource}
+                   <img src="./img/project.png" alt="source icon">
+                  </button>
+                </div>
+              </div>
+          </div>
+     </section>
+`;
+    const popClose = document.querySelector('.close-btn');
+    popClose.addEventListener('click', () => {
+      popMenu.classList.remove('act');
+      document.body.classList.remove('no-scroll');
+    });
   });
 });
-const modalClose = document.querySelector('.close');
-modalClose.addEventListener('click', () => {
-  modal.classList.remove('act');
-  document.body.classList.remove('no-scroll');
-});
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = (event) => {
-  if (event.target === modal) {
-    modal.style.display = 'none';
-  }
-};
+// form validation
 
-//* **end of modal***
-
-// ***the contact form validation***
-
-// Step-1 Check the letter case of the string is lower case, if yes, return true,
-// if no, return false
 const checkCase = (str) => {
   const isLower = str.toString().toLowerCase();
   if (str === isLower) {
@@ -196,74 +242,47 @@ const checkCase = (str) => {
   }
   return false;
 };
-
-// Step-2 validate the email, prevent the default event submit,
-// take the input value of email, if email value is in lowercase, return true,
-// form will be submitted using formspree service
-// else return false
 const validate = (email) => {
   email.preventDefault();
   const inputMail = document.getElementById('email').value;
-  const form = document.getElementById('myform');
-  const checkEmail = checkCase(inputMail);
-  if (checkEmail === true) {
+  const form = document.getElementById('getintouch-form');
+  const checkedEmail = checkCase(inputMail);
+  if (checkedEmail === true) {
     form.action = 'https://formspree.io/f/xbjewoor';
     form.submit();
-  } else { // else return false and throw an error message for the user
-    const throwError = document.getElementById('error-msg');
-    throwError.innerHTML = 'Please check your email address again. The email input should always be in the lower case.';
+  } else {
+    const throughError = document.getElementById('error-msg');
+    throughError.innerHTML = 'Please check your email address. Email field must always be in lower case.';
   }
 };
-const form = document.getElementById('myform');
+const form = document.getElementById('getintouch-form');
 form.addEventListener('submit', validate);
 
-//* **end of form validation code***
+// local storage
 
-//* **preserve data in browser local storage ***
-
-/**
- * Declaring form elements i-e name, email, textarea
- * The form elements (fullNameInput, emailInput, and textInput)
- * are declared by selecting the corresponding HTML elements using document.querySelector().
-*/
-const fullNameInput = document.querySelector('#name');
+const nameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
-const textInput = document.querySelector('#textarea');
+const messageInput = document.querySelector('#textarea');
 
-// Load the data from local storage, if it already exists in the local storage
-const savedData = JSON.parse(localStorage.getItem('myFormData'));
-
-/**
- * An if statement checks if there is any saved data (savedData). If data exists,
- * it populates the form fields (fullNameInput, emailInput, and textInput) with the saved values.
-*/
+// Load the data from local storage, if it exists
+const savedData = JSON.parse(localStorage.getItem('formData'));
 
 if (savedData) {
-  fullNameInput.value = savedData.name;
+  nameInput.value = savedData.name;
   emailInput.value = savedData.email;
-  textInput.value = savedData.message;
+  messageInput.value = savedData.message;
 }
-/**
- * The saveFormData() function is defined to capture changes in the
- *  form input fields. Inside the function, a JavaScript object (myFormData)
- *  is created with the current values of the input fields.
- */
+
 function saveFormData() {
-  const myFormData = {
-    name: fullNameInput.value,
+  const formData = {
+    name: nameInput.value,
     email: emailInput.value,
-    text: textInput.value,
+    message: messageInput.value,
   };
 
-  /**
-  * The myFormData object is then saved to local storage as a single entry
-  *  using localStorage.setItem('myFormData', JSON.stringify(myFormData)).
-  * The object is converted to a JSON string using JSON.stringify() before storing it.
- */
-
-  localStorage.setItem('myFormData', JSON.stringify(myFormData));
+  // Save the data to local storage as a single entry
+  localStorage.setItem('formData', JSON.stringify(formData));
 }
-// adding eventListeners to the form input elements
-fullNameInput.addEventListener('input', saveFormData);
+nameInput.addEventListener('input', saveFormData);
 emailInput.addEventListener('input', saveFormData);
-textInput.addEventListener('input', saveFormData);
+messageInput.addEventListener('input', saveFormData);
