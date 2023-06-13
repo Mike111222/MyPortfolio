@@ -1,236 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <!-- google fonts -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css_styles/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <title>Muhammad Amran Khan's Portfolio</title>
+  </head>
 
-  <!-- google fonts -->
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
-
-  <title>Muhammad Amran Khan's Portfolio</title>
-</head>
-
-<body>
-  <!-- the navbar (and header) section -->
-  <header id="myheader">
-    <a class="logo" href="#home">My Logo</a>
-    <nav class="navbar">
-      <ul class="nav-menu">
-        <li class="nav-item">
-          <a href="#myworks" class="nav-link">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a href="#about-me" class="nav-link">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="#for-getintouch" class="nav-link">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a href="mailto:tipu870@gmail.com" class="disappear nav-link"><img src="./images/Union.png" alt="email"></a>
-        </li>
-
-      </ul>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </nav>
-  </header>
-  <!-- the main headline section -->
-  <main>
-    <section class="mybiopage" id="home">
-      <div class="mybio">
-        <h1>Hey There. I'm Mike</h1>
-        <h2>I'm a Software Developer</h2>
-        <p>
-          I can help you to build a product, feature or website. Look through
-          some of my work and experience! If you like what you see and have a
-          project you need coded, don't hesitate to contact me.
-        </p>
-      </div>
-
-      <!--social media contacts section -->
-      <div class="socialbtns-main">
-        <ul>
-          <li>
-            <a href="https://github.com/Mike111222" target="_blank" rel="noopener"> <img class="mysocial"
-                src="./images/Gitty.png" alt="" /></a>
-          </li>
-          <li>
-            <a href="https://linkedin.com/in/Mike111222" target="_blank" rel="noopener"> <img class="mysocial"
-                src="./images/Linkedin.png" alt="" /></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/company/vivimedia/about/" target="_blank" rel="noopener"> <img
-                class="mysocial" src="./images/Vic.png" alt="" /></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/iMike111222" target="_blank" rel="noopener"> <img class="mysocial"
-                src="./images/Twitter.png" alt="" /></a>
-          </li>
-          <li>
-            <a href="mailto:tipu870@gmail.com" target="_blank" rel="noopener"> <img class="mysocial"
-                src="./images/Mail.png" alt="" /></a>
-          </li>
-          ...
-        </ul>
-      </div>
-
-    </section>
-    <section id="myworks">
-      <div class="works-title">
-        <h2 id="work-headline">My Recent Works</h2>
-        <div class="line"></div>
-      </div>
-      <div class="myworks">
-        <div class="multi-storybg">
-          <div class="work-image"></div>
-        </div>
-        <div class="div-myworks">
-          <h2 class="work-subheading">Multi-Post Stories</h2>
-          <p class="work-specs">A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an
-            unknown
-            printer took a standard dummy text.</p>
-          <ul class="for-flex">
-            <li class="flex-items work-items item1">JS</li>
-            <li class="flex-items work-items item2">HTML</li>
-            <li class="flex-items work-items item3">BootStrap</li>
-            <li class="flex-items work-items item3">Ruby</li>
+  <body>
+    <header class="flex">
+      <nav class="navbar flex">
+        <a class="logo flex" href="#home">My Logo</a>
+          <ul class="nav-menu flex">
+            <li class="disapear nav-item">
+              <a href="#projects" class="nav-link">Portfolio</a>
+            </li>
+            <hr class="underline hide">
+            <li class="disapear nav-item">
+              <a href="#aboutme" class="nav-link">About</a>
+            </li>
+            <hr class="underline hide">
+            <li class="disapear nav-item">
+              <a href="#getintouch" class="nav-link">Contact</a>
+            </li>
+            <hr class="underline hide">
+            <li class="disapear nav-item touch">
+              <a href="#getintouch" class="nav-link"><img class="menubtn" src="img/menu.png" alt="email" /></a>
+            </li>
+            <hr class="underline hide">
           </ul>
-          <div><button id="myworks-btn" type="button" class="work-btn">See Project</button></div>
-        </div>
-      </div>
-    </section>
-    <section id="projects-container" class="projects-section">
-    </section>
-    <div id="myModal" class="myModal">
-    </div>
-    <section id="about-me">
-      <div class="aboutme-card">
-        <div>
-          <h2 id="for-me">About me</h2>
-        </div>
-
-        <div>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+      </nav>
+    </header>
+<!-- main section -->
+    <main>
+      <!-- intro section -->
+      <section class="intropage flex flex-column">
+        <div class="intro">
+          <h1>
+            Hey There. <br />
+            I'm Mike.
+          </h1>
+          <h2 class="flex">I'm a Software Developer</h2>
           <p>
             I can help you to build a product, feature or website. Look through
             some of my work and experience! If you like what you see and have a
             project you need coded, don't hesitate to contact me.
           </p>
         </div>
-        <button type="button" class="work-btn resume-btn">Get My Resume</button>
-      </div>
-
-    </section>
-    <section id="pro-languages">
-      <div>
-
-        <div class="my-thumbnail">
-          <div class="rectangle"></div>
-
-          <h2 class="lang-headings">Languages</h2>
-        </div>
-        <ul>
-          <ul class="style-listitems dt-list">
-            <li class="my-listitems">JavaScript</li>
-            <li class="my-listitems">Ruby</li>
-            <li class="my-listitems">HTML</li>
-            <li class="my-listitems">CSS</li>
+        <!-- social elements -->
+        <div class="socialintro">
+          <ul class="flex">
+            <li>
+              <a
+                href="https://github.com/Mike111222"
+                target="_blank"
+                rel="noopener"
+              >
+                <img class="social1" src="img/Disabled.png" alt="githublink"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/in/Mike111222"
+                target="_blank"
+                rel="noopener"
+              >
+                <img class="social1" src="img/Disabled-1.png" alt="linkedinlink"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/vivimedia/about/"
+                target="_blank"
+                rel="noopener"
+              >
+                <img class="social1" src="img/Enabled.png" alt="listlink"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/iMike111222"
+                target="_blank"
+                rel="noopener"
+              >
+                <img class="social1" src="img/Disabled-2.png" alt="twitterlink"
+              /></a>
+            </li>
+            <li>
+              <a href="mailto:tipu870@gmail.com" target="_blank" rel="noopener">
+                <img class="social1" src="img/Disabled-3.png" alt="gmaillink"
+              /></a>
+            </li>
           </ul>
-      </div>
-      <div>
-        <div class="my-thumbnail">
-          <div class="rectangle square">
-          </div>
-          <h2 class="lang-headings">Frameworks</h2>
         </div>
-        <ul class="style-listitems dt-list">
-          <li class="my-listitems">React.js</li>
-          <li class="my-listitems">Ruby on Rails</li>
-          <li class="my-listitems">RSPec</li>
-          <li class="my-listitems">CapyBara</li>
-
-        </ul>
-      </div>
-      <div class="div-skills">
-        <div class="my-thumbnail">
-          <div class="rectangle circle">
-          </div>
-          <h2 class="lang-headings ">Skills</h2>
+      </section>
+      <!-- intro section ended -->
+      <!-- headline section -->
+      <section id="projects" class="work flex flex-column">
+        <div id="work-title">
+          <h3 class="work-heading">My Recent Works
+          </h3>
+            <div class="line">
+            </div>
         </div>
-        <ul class="style-listitems dt-list">
-          <li class="my-listitems">Database Management</li>
-          <li class="my-listitems">Version Control</li>
-          <li class="my-listitems">CLI</li>
-          <li class="my-listitems">API Design</li>
-          <li class="my-listitems">Web Development</li>
-        </ul>
-        </ul>
-      </div>
-    </section>
-    <section id="for-getintouch" class="myborder">
-      <div class="container-touch">
-        <h2 class="lets-intouch">I'm always interested in hearing about new projects, so if you'd like to chat,
-          please get in touch.</h2>
-      </div>
-      <div class="container-form">
-        <form id="myform" action="https://formspree.io/f/xbjewoor" method="post">
-          <input name="name" class="input myborder" type="text" id="name" required placeholder="Full name"
-            maxlength="30">
+          <div class="work-card">
+            <div id="work-image">
+            </div>
+           <div class="work-subtitle">
+            KingFisher Chemicals
+              <p class="work-details">
+                This project belongs to inform farmers, agnomists, people and activists around the globe about a meeting, emphacizing the slogan, "Food is the New Gold".
+              </p>
+              <div class="flex
+                    flex-start">
+               <p class="flex-item">CSS
+               </p>
+               <p class="flex-item">HTML
+               </p>
+               <p class="flex-item">JavaScript
+               </p>
+               <p class="flex-item">Bootstrap
+               </p>
+              </div>
+              <button class="headline-btn work-button">
+              See Project
+              </button>
+           </div>
+        </div>
+     </section>
 
-          <input name="email" id="email" class="input myborder" type="email" required placeholder="Email address">
-          <textarea name="textarea" type="text" class="input" id="textarea" cols="32" rows="6" required
-            placeholder="Hey Mike, I would like to get in touch with you." maxlength="500"></textarea>
-          <div class="centerbtn validation-box">
-            <small id="error-msg"></small>
-            <button id="gettouch-btn" name="getintouch-btn" type="submit" class="work-btn">Get in
-              touch</button>
+    <!-- Section Projects -->
+
+     <div id="projects-container"       
+      class="projects">
+      </div>
+      
+      <!-- section popup -->
+      <div class="seePopup" id="seePopup">
+      </div>
+
+      <!-- section aboutme -->
+      <section id="aboutme" class=" flex flex-column">
+          <h2 id="me">About me</h2>
+          <p>
+          I can help you to build a product, feature or website. Look through
+          some of my work and experience! If you like what you see and have a
+          project you need coded, don't hesitate to contact me.
+          </p>
+          <button class="resumebtn">
+            Get My Resume
+          </button>
+          <div class="aboutme-border">
+
           </div>
-        </form>
-      </div>
-    </section>
-  </main>
-  <footer class="footerbtns">
-    <div class="socialbtns">
-      <ul class="for-footercenter">
-        <li>
-          <a href="https://github.com/Mike111222" target="_blank" rel="noopener"> <img src="./images/GitHub.jpeg"
-              alt=""></a>
-        </li>
-        <li>
-          <a href="https://linkedin.com/in/Mike111222" target="_blank" rel="noopener"> <img src="./images/LinkedIn.jpeg"
-              alt=""> </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/company/vivimedia/about/" target="_blank" rel="noopener"> <img
-              src="./images/Victory.jpeg" alt=""></a>
-        </li>
-        <li>
-          <a href="https://twitter.com/iMike111222" target="_blank" rel="noopener"> <img src="./images/Twitter.jpeg"
-              alt=""></a>
-        </li>
-        <li>
-          <a href="mailto:tipu870@gmail.com" target="_blank" rel="noopener"> <img src="./images/Mail.jpeg" alt=""></a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-  <script src="js/script.js"></script>
-</body>
+      </section>
+      <section id="languages" class="flex flex-column">
+        <div class="thumbnail">
+          <div class="rectangle"></div>
+           <h2 class="headings">Languages</h2>
+            <ul class="marginlistitems flex flex-column">
+              <li class="listitems">Javascript</li>
+              <li class="listitems">Ruby</li>
+              <li class="listitems">HTML</li>
+              <li class="listitems">CSS</li>
+            </ul>
+        </div>
+          <div class="thumbnail">
+            <div class="square"></div>
+             <h2 class="headings">Frameworks</h2>
+              <ul class="marginlistitems flex flex-column">
+               <li class="listitems">Bootstrap</li>
+               <li class="listitems">Ruby on Rails
+               </li>
+               <li class="listitems">RSPec</li>
+               <li class="listitems">CapyBara</li>
+               <li class="listitems">Selenium</li>
+            </ul>
+          </div>
+          <div class="thumbnail">
+            <div class="circle"></div>
+            <h2 class="headings">Skills</h2>
+            <ul class="marginlistitems flex flex-column">
+              <li class="listitems">Codekit</li>
+              <li class="listitems">Github</li>
+              <li class="listitems">Codepen</li>
+              <li class="listitems">Gitlab</li>
+              <li class="listitems">Terminal</li>
+            </ul>
+          </div>
+        </ul>
+      </section>
 
+      <form id="getintouch-form"action="https://formspree.io/f/xbjewoor" method="POST">
+        <section id="getintouch" class="border">
+          <h2 class="intouch">
+            I'm always interested in hearing about new projects, so if you'd
+            like to chat please get in touch
+          </h2>
+          <div class="getintouch-form">
+            <input id="name"
+            class="input border"
+            type="text"
+            placeholder="Full name"
+            maxlength="30"
+            required
+            />
+            <input id="email"
+            class="input border"
+            type="email"
+            placeholder="Email address"
+            required
+            />
+            <textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="Hello Mike. I would like to get in touch with you..." required></textarea>
+            <h4 id="error-msg" class="error"></h4>
+            <div class="centerbtn">
+            <button id="getintouch-btn" type="submit" class="getintouchbtn">
+              Get in touch
+            </button>
+          </div>
+        </div>
+        </section>
+      </form>
+    </main>
+
+    <footer>
+      <div class="sociallinks">
+        <ul class="footercenter flex">
+          <li>
+            <a href="https://github.com/Mike111222" target="_blank" rel="noopener">
+              <img src="img/github.png" class="social" alt="githublink" />
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/Mike111222"
+              target="_blank"rel="noopener">
+              <img src="img/linkedin.png" class="social" alt="linkedinlink" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/company/vivimedia/about/"
+              target="_blank"
+              rel="noopener">
+              <img src="img/angellist.png" class="social" alt="angellistlink" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/iMike111222"
+              target="_blank"
+              rel="noopener">
+              <img src="img/twitter.png" class="social" alt="twitterlink" />
+            </a>
+          </li>
+          <li>
+            <a href="mailto:tipu870@gmail.com" target="_blank" rel="noopener">
+              <img src="img/gmail.png" class="social" alt="gmaillink" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>
