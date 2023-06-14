@@ -113,7 +113,7 @@ const allProjects = [
     id: 'projects',
     name: 'KingFisher Chemicals',
     description: 'This project belongs to inform farmers, agnomists, people and activists around the globe about a meeting, emphacizing the slogan, "Food is the New Gold". It also gives details about the program, featured speakers, venue and dates.',
-    featuredImage: './img/KingFisherChemicals.JPG',
+    featuredImage: './img/KingFisherChemicals.jpg',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     seeProject: 'See Project',
     linkLive: '<a href="https://Mike111222.github.io/KingFisher-Chemicals/" target="blank">See Live</a>',
