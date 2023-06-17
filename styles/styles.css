@@ -30,7 +30,7 @@ header {
 .logo {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 24px;
   text-align: center;
   text-decoration: none;
@@ -123,6 +123,8 @@ nav ul li {
 
 nav ul li:hover {
   border: 1px solid #ff6b00;
+  color: lightblue;
+  transition: all 0.3s ease-in-out;
 }
 
 /* introduction section */
